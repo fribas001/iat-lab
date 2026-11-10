@@ -1,0 +1,129 @@
+RIS PRESENTATION SCENE — FULL BACKGROUND, METAL REFLECTIONS OFF
+21 October 2026
+
+OPEN
+Open RIS_Full_Background_Close_Pair.blend in Blender 5.2.
+Geometry, paths, heatmaps, materials and numerical tables are embedded. Viewing
+and filtering do not require an external CSV or running a Python script.
+
+The scene menu offers:
+  01 Plants - active RIS       (the presentation starts here)
+  02 Plants - reflective RIS
+  03 No plants - active RIS
+  04 No plants - reflective RIS
+These use the same background, target, scanner geometry and saved state vectors.
+The no-plant scenes are matched computational baselines, not extra measurements.
+
+PATH CONTROLS
+Select the object starting with PATHS. Open its wrench / Modifiers tab.
+The modifier extends the existing Sionna_Paths Geometry Nodes system.
+
+  Receiver index: 2300 is Hamed's confirmed focusing target.
+    0..2299 are the scanner samples. -1 shows all saved receivers (can be slow).
+    index = 46 * row + column; rows 0..49, columns 0..45.
+    Report x = 1.00 + 0.02*row; report y = 0.02 + 0.02*column [m].
+  Tile index: -1 all, or 0..3.
+  Cell index: -1 all, or 0..507.
+  Show RIS branch / Show TX bypass: separate the two contributions.
+  Reflection class: 0 all; 1 no extra reflection; 2 room/object reflection;
+    3 plant reflection. The RIS interaction is present in all RIS-branch paths.
+  Paths per class: starts at 12 to keep the picture readable. 0 shows every
+    embedded path passing the other filters. If a chosen cell is not shown,
+    set this to 0. Grid receivers contain a display subset; see below.
+  Minimum path gain / Maximum delay: the familiar Sionna gain and delay filters.
+  Path radius: metres; 0.001 is a 1 mm radius display tube, not a beam width.
+  Trim path: 0..1, useful for animating propagation along each saved polyline.
+  No extra reflection / Reflections / Transmission only: original type filters.
+
+Use the scene menu to switch active/reflective or plant/no-plant conditions.
+The corresponding path mode, plant visibility and heatmap are already consistent.
+Changing just a path modifier's mode switches that path display only.
+
+Every segment is straight. Reflection vertices are computed intersections on
+the actual mesh. Lines going through a leaf represent the modeled transmitted
+component; a leaf does not necessarily extinguish every path completely.
+Blue/green/orange type colours are display aids, not received power or beam width.
+
+DISPLAY VERSUS COMPUTATION
+The heatmaps use ALL calculated paths and ALL 508 cells, combined coherently.
+At the confirmed target, every nonzero end-to-end calculated path is embedded.
+For each scanner receiver, the file embeds the union of the strongest 32 paths
+for each of the four conditions, plus the strongest 4 in each reflection class.
+All bypass paths are included. This keeps the Blender file usable interactively.
+The paths-per-class control filters this saved subset; it does not rerun physics.
+Single-path magnitude cannot be added in dB to reproduce the total heatmap:
+the complex fields interfere before their total is converted to power.
+
+HEATMAPS
+Each 2 cm pixel lies in the saved tilted scanner plane. These are raw simulated
+received powers with 10 dBm conducted TX power, not 10-wavelength averages.
+The fixed range is -90 to -20 dBm with the original AIT/MATLAB jet palette.
+No fitted offset, per-map normalization, or 17 dB adjustment has been applied.
+Separate PNGs with colour bars accompany the file.
+
+VIEWS
+CAM 1: apparatus and paths. CAM 2: top view. CAM 3: plant gap.
+CAM 4: room overview. Select a camera and make it active for another view.
+Walls/ceiling hidden in the opening cutaway WERE present in the RF calculation.
+Their objects are retained under the RF cutaway collection. Viewport visibility
+and render visibility can be enabled for a room view; this does not change data.
+The archived moving scanner carriage is also retained, hidden and display-only.
+
+GEOMETRY AND PHYSICS
+23.8 GHz. Four tiles, 127 cells per tile. W01133 selected spacing/alignment.
+Target in report coordinates: (1.2785, 0.4653, 0.96) m.
+Target in Blender world: (1.1847, 1.4285, 0.96) m.
+Plant layout: Az00_Tz00, close pair, approximately 35.02 cm trunk spacing,
+with the central gap retained. Assumed support-plane height: 0.50 m.
+128 and 148 explicit leaves. This is a geometric hypothesis, not a surveyed pair.
+The archived 0.75 m tabletop cuts through these lowered plants. The support bench
+is therefore modeled at 0.50 m, with its feet retained at floor level, as an
+explicit UNCONFIRMED geometry hypothesis. Plant and RX coordinates are unchanged.
+The original taller bench is retained in a hidden REFERENCE ONLY collection.
+This support-height change is not a measurement-based correction or a fitted value.
+
+The active vector has 269 ON cells (coefficient 1.25) and 239 OFF cells (0).
+The reflective vector uses magnitude 0.3 with phases -15 and 165 degrees.
+Both are the saved nominal-design, confirmed-target profiles. They were not
+reoptimized for these background simulations. The measured 508 states were not
+saved by the experimenter; these are our reproducible model profiles.
+
+Full archived laboratory geometry is used for visibility. Metal REFLECTIONS
+are disabled, as requested; metal remains opaque and can block a path.
+Nonmetal room, absorber-proxy, wood, scanner and RIS-board reflections remain.
+Direct and finite single-reflection paths are calculated on each hop, with
+leaf/pot slab transmission along each segment. A RIS path can therefore have
+one additional reflection on each side of the cell. TX-to-RX bypass is included.
+Fields are summed coherently. This is the established research transport model
+used with the Sionna adaptation; it is not an unlimited-bounce Sionna run.
+No diffuse scattering, diffraction, cell coupling or amplifier noise is modeled.
+
+Leaves and plastic-pot material assumptions are unchanged. Stems, petioles,
+veins, soil, stakes and ties are visible but remain RF-excluded in this run.
+The support outlines only mark the assumed height; their construction is unknown.
+The RIS backing board follows the selected RIS rotation. The RX grid retains its
+selected tilt independently of the level lower bench. The original RF material
+proxies and thicknesses are retained.
+Coplanar overlapping triangles of the same room object/material/plane are
+treated as one reflecting surface; duplicate hits are not counted twice.
+
+IMPORTANT FOR REUSE
+This is a NEW background-included simulation. It does not replace the earlier
+metal-off/divider-only measurement comparisons or establish a new fit.
+Moving plants, changing materials or cell states does not update saved paths.
+The embedded addon settings preserve custom target coordinates and object/material
+references, but pressing Run RIS uses the addon's own current solver. Do not
+assume that it reproduces this archived finite-plane/slab research calculation.
+The exact frozen arrays and solver files are retained in the parent project folder.
+
+DATA
+Simulation_maps.csv: all 2300 grid samples plus target, four conditions, dBm.
+RIS_508_cell_states.csv: physical coordinates and both complex state vectors.
+State_active.json / State_reflective.json: addon-compatible saved-state files,
+checked for exact coefficient replay. Keep these beside the .blend for addon
+replay; if you move the folder, reselect the appropriate JSON in the addon's RIS
+state-file field. Viewing the embedded paths does not need them. Native reruns need
+the solver-policy checks described above, especially metal-reflection exclusion.
+Simulation_protocol.json: geometry/material choices and original input hashes.
+Simulation_manifest.json: path counts, reflection exclusions and numerical checks.
+These tables and the instructions are also available in Blender's Text Editor.

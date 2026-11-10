@@ -1,0 +1,154 @@
+{
+  "purpose": "Presentation scene with latest anchor plants and new full-background transport.",
+  "frequency_hz": 23800000000.0,
+  "tx_power_dbm": 10.0,
+  "primary_mode": "active",
+  "target_report_xyz_m": [
+    1.2785,
+    0.4653,
+    0.96
+  ],
+  "geometry_id": "W01133",
+  "state_key": "selected_active_confirmed_target_nominal_design",
+  "state_policy": "Exact saved confirmed-target vector; no optimization for full background.",
+  "plant_layout": {
+    "id": "Az00_Tz00",
+    "source_geometry_sha256": "b17b58d76335924f212fd8962d369a6332b9a025f53660d2843715b5b998b8c1",
+    "geometry_sha256": "b17b58d76335924f212fd8962d369a6332b9a025f53660d2843715b5b998b8c1",
+    "source_along_cm": 0,
+    "source_across_cm": 0,
+    "updated_along_cm": 0.0,
+    "updated_across_cm": 0.0,
+    "plants": [
+      {
+        "id": "Plant1",
+        "plant": 0,
+        "root_world_m": [
+          1.4912139207983808,
+          1.0774590936754749,
+          0.662
+        ],
+        "yaw_radians": 1.919861849470626,
+        "yaw_degrees": 109.99998122284744,
+        "leaf_count": 128,
+        "leaf_area_m2": 0.40558426884767357,
+        "leaf_bounds_m": [
+          [
+            1.3040019273757935,
+            0.8623214364051819,
+            0.9756770133972168
+          ],
+          [
+            1.6721023321151733,
+            1.3132797479629517,
+            1.3102130889892578
+          ]
+        ],
+        "pot_bottom_m": 0.5015000104904175,
+        "supported_pot": true
+      },
+      {
+        "id": "Plant2",
+        "plant": 1,
+        "root_world_m": [
+          1.1621125056485901,
+          0.9576760966481064,
+          0.6719999999999999
+        ],
+        "yaw_radians": 1.919861849470626,
+        "yaw_degrees": 109.99998122284744,
+        "leaf_count": 148,
+        "leaf_area_m2": 0.48177027524596544,
+        "leaf_bounds_m": [
+          [
+            0.9677985310554504,
+            0.7380210161209106,
+            0.9924793839454651
+          ],
+          [
+            1.3486813306808472,
+            1.196291208267212,
+            1.3512516021728516
+          ]
+        ],
+        "pot_bottom_m": 0.5015000104904175,
+        "supported_pot": true
+      }
+    ],
+    "support_height_m": 0.5,
+    "minimum_leaf_distance_lower_bound_m": 0.017588173534690946,
+    "trunk_center_spacing_m": 0.35022236911775556,
+    "central_leaf_intersections": 0,
+    "scanner_clearance": {
+      "pass_clearance": true,
+      "guard_m": 0.01,
+      "triangles_entering_keepout": 0,
+      "minimum_vertical_gap_within_expanded_xy_m": 0.019183312050667922,
+      "keepout_world_bounds_m": [
+        [
+          0.7199999999999998,
+          1.14,
+          0.95
+        ],
+        [
+          1.64,
+          2.1399999999999997,
+          0.97
+        ]
+      ],
+      "scope": "All plant triangles versus the continuous receiver rectangle expanded by 10 mm in XYZ; geometric guard, not a measured moving-horn envelope. Static scanner and room collision checks are separate."
+    },
+    "rejection_reasons": []
+  },
+  "materials": {
+    "frequency_hz": 23800000000.0,
+    "columns": [
+      "relative_permittivity",
+      "conductivity_S_m",
+      "slab_thickness_m"
+    ],
+    "leaf": [
+      13.698127404866636,
+      18.465524003889673,
+      0.0003000000142492354
+    ],
+    "pot": [
+      2.200000047683716,
+      0.00582583574578166,
+      0.003000000026077032
+    ],
+    "source_config_sha256": "16d0e4b8ada90beaee81a09a473d45ec3c00eef1bd8151db4894ea2f6cfc0039",
+    "wood_and_soil": "Excluded, not lossless material estimates"
+  },
+  "background": "Metal reflections disabled; metal meshes retained for opaque visibility. Other background surfaces retained.",
+  "geometry_changes": [
+    "Level support bench lowered to 0.50 m as an explicit geometry hypothesis, with unchanged RX phase-centre grid.",
+    "RIS backing board rotated with selected RIS aperture; stand remains fixed.",
+    "Old vegetation replaced by the exact close-pair anchor meshes."
+  ],
+  "solver_scope": "Direct plus exhaustive finite one-reflection paths per hop; leaf/pot slab transmission on every leg; coherent RIS two-hop and bypass sum. Opaque room objects. No diffuse scattering or diffraction.",
+  "limitations": [
+    "W01133 geometry is exploratory, not surveyed.",
+    "Archived room/absorber material proxies retained, including historical slab thickness.",
+    "Full-background run differs from the latest metal-off comparison and is not a new measurement fit.",
+    "Branches, petioles and soil remain visual-only; no cell mutual coupling or amplifier noise.",
+    "Support bench lowered to match the already-selected 0.50 m plant support hypothesis. This height is not confirmed by the experimenter.",
+    "Saved path display is a bounded subset on the scanner grid; maps use the complete coherent calculation."
+  ],
+  "source_sha256": {
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Case3_Confirmed_Target_2026-10-20\\native\\selected_operators.npz": "8254ff306fd75af218baeeee97a9463d22fa86a9716490263bbd55779f3418f2",
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Case3_Confirmed_Target_2026-10-20\\data\\states.npz": "c77ab183fcd023c7bb0ea8fb6b8a0cff2acf53c583b5e07cd6e53f894fdf3af6",
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Case3_Confirmed_Target_2026-10-20\\protocol.json": "0b2c73471330f2d899d62a8023251fa6ad790c1cd81aa2c0a6deb440b8492ea3",
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Plant_Reflections_2026-10-14\\cache\\h75\\geometry.npz": "79a1fa9a3a69c5b7a7090a1b361d678c52a09d335cb42010f0dbb657fe351a74",
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Case3_Reflection_Attribution_2026-10-14\\face_object_mapping.npz": "1649067125f4e9e4f653c25c75c0a09a0221cc75786d38bc282c91b732bab253",
+    "C:\\Users\\feolr\\Documents\\Codex\\2026-09-10\\ch\\outputs\\RIS_Close_Pair_Updated_Case3_2026-10-19\\geometry\\Az00_Tz00.npz": "b17b58d76335924f212fd8962d369a6332b9a025f53660d2843715b5b998b8c1"
+  },
+  "support_geometry_hypothesis": {
+    "bench_top_height_m": 0.5,
+    "original_bench_top_height_m": 0.75,
+    "reason": "The fixed close-pair plants have pot bottoms at 0.5015 m. Their stems intersect the archived 0.75 m tabletop. This reversible hypothesis gives them a consistent support plane without moving plants, changing RIS states or fitting any measurement.",
+    "transform": "Use archived level scanner/bench XY. Preserve upper section dimensions by lowering z > 0.72 m by 0.25 m. Shorten lower structure by z*0.47/0.72, feet remain at floor. RX sample plane retains its saved selected rotation independently.",
+    "status": "Unconfirmed geometry assumption for presentation; original bench retained in environment_original_bench.npz."
+  },
+  "coplanar_room_handling": "Overlapping component triangles belonging to the same object/material/plane use their geometric union; each reflection point counted once."
+}

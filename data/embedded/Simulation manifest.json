@@ -1,0 +1,45 @@
+{
+  "complete": true,
+  "receiver_count": 2301,
+  "scanner_count": 2300,
+  "embedded_display_paths": 240985,
+  "embedded_target_paths": 5153,
+  "evaluated_RIS_path_pairs": 22848541,
+  "removed_metal_reflections": {
+    "stage1": 0,
+    "stage2": 0,
+    "stage3": 0
+  },
+  "coherent_reconstruction_max_absolute_field_error": {
+    "active": 2.9874639510156797e-18,
+    "no_plant_active": 6.5862493333626126e-18,
+    "reflective": 2.477852685519997e-18,
+    "no_plant_reflective": 4.066571217151102e-18
+  },
+  "all_fields_finite": true,
+  "path_display_policy": "Every nonzero target path; grid receivers retain the union of top 32 paths for active/reflective, with/without plants, plus top 4 per extra-reflection category for each mode. All bypass paths. Ranking uses individual path magnitude, not coherent aggregate power. Full maps use every path.",
+  "metal_policy": "Metal reflections disabled; metal meshes retained for opaque visibility. Other background surfaces retained.",
+  "metal_reflections_excluded_during_tracing": true,
+  "retained_metal_reflections": 0,
+  "native_operator_vs_path_reconstruction_max_absolute_error": {
+    "stage1": 0.0,
+    "stage2": 1.7482234731686756e-18,
+    "stage3": 0.0,
+    "no_plant_stage1": 0.0,
+    "no_plant_stage2": 0.0,
+    "no_plant_stage3": 0.0,
+    "active_ris": 2.1852793414608445e-19,
+    "active_background": 0.0,
+    "active": 2.1852793414608445e-19,
+    "no_plant_active_ris": 0.0,
+    "no_plant_active_background": 0.0,
+    "no_plant_active": 0.0,
+    "reflective_ris": 6.06087439757635e-20,
+    "reflective_background": 0.0,
+    "reflective": 1.0842021724855044e-19,
+    "no_plant_reflective_ris": 0.0,
+    "no_plant_reflective_background": 0.0,
+    "no_plant_reflective": 0.0
+  },
+  "support_height_user_confirmation": "User selected the 0.50 m bench hypothesis while retaining the plant and RX positions."
+}

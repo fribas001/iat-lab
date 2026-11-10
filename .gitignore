@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+runs/
+renders/
+*.blend[0-9]*
+*.blend@
+.DS_Store
+Thumbs.db
+.env
+.env.*

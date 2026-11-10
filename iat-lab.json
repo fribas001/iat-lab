@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "name": "IAT Lab",
+  "created": "2026-11-10",
+  "blender": {
+    "tested_version": "5.2.3 LTS",
+    "recommended_version": "5.2.3 LTS"
+  },
+  "baseline": {
+    "path": "assets/baseline/RIS_Full_Background_Close_Pair.blend",
+    "sha256": "a35ca6ee3aa93de6d6f04ae69da4aa31e47777c757e6b2c14e596f15f0436588",
+    "bytes": 12509361,
+    "source": "RIS_Repository_Structure_Update_2026-11-08/blender/archive/RIS_Full_Background_Close_Pair.blend"
+  },
+  "working_scene": "scenes/IAT_Lab.blend",
+  "scenes": [
+    "01 Plants - active RIS",
+    "02 Plants - reflective RIS",
+    "03 No plants - active RIS",
+    "04 No plants - reflective RIS"
+  ],
+  "reference_files": [
+    {
+      "path": "data/baseline_inventory.json",
+      "sha256": "c5fb77388882d3fbc41ff928ca7190e6c14a032e8c468ea56c3524a7117b3126"
+    },
+    {
+      "path": "data/embedded/PROTOCOL.json",
+      "sha256": "b66e348369200c706262e1f6efc2414a2ea370e8787a2429b954acc3c1758359"
+    },
+    {
+      "path": "data/embedded/RIS_508_cell_states.csv",
+      "sha256": "f44f42a878c3532be52441613068964aba75743d4b85fff65e03ccad47a116ab"
+    },
+    {
+      "path": "data/embedded/Simulation manifest.json",
+      "sha256": "fab7cb96d48bb6056984b3780cf0d122ac8bbc2bd0f67dc4ab9e9a33b5766dbe"
+    },
+    {
+      "path": "data/embedded/Simulation_maps.csv",
+      "sha256": "a921d86165789909fb36360b377eeffbb6068a7976595a8026847e24df790b58"
+    },
+    {
+      "path": "data/embedded/START HERE.txt",
+      "sha256": "051318849822b08a7751ae71c77afcfe669524ebb9c11752494f02f09c58090d"
+    },
+    {
+      "path": "data/embedded/State_active.json",
+      "sha256": "6104fa228cb4fe0a457ecf2877eee2e6d1c2574f990b706302153e6f30c5e722"
+    },
+    {
+      "path": "data/embedded/State_reflective.json",
+      "sha256": "ff35104d867aef45d7a334847e1d59429c2f0ad8e014732afcd660bf6bfce0d6"
+    }
+  ],
+  "architecture_reference": "https://github.com/BradyAJohnston/MolecularNodes/blob/main/CONTRIBUTING.md"
+}
