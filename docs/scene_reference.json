@@ -1,0 +1,2625 @@
+{
+  "schema_version": 1,
+  "inspected_on": "2026-11-10",
+  "blender_version": "5.2.3 LTS",
+  "source": "scenes/IAT_Lab.blend",
+  "source_sha256": "a35ca6ee3aa93de6d6f04ae69da4aa31e47777c757e6b2c14e596f15f0436588",
+  "method": "Read-only bpy inspection; no blend save. Modifier values read from modifier.properties.inputs; eye states queried per view layer.",
+  "scope": "Documentation evidence for this saved file, not a lossless scene serializer or a generated current-state guarantee.",
+  "counts": {
+    "scenes": 4,
+    "collections": 12,
+    "objects": 86,
+    "geometry_node_groups": 2
+  },
+  "collections": [
+    {
+      "name": "01 RF - full laboratory",
+      "objects": [
+        "Lab_Floor | RF 01",
+        "Wall_X_Min | RF 03",
+        "Wall_Y_Min | RF 05",
+        "Absorber_Wall_Y_Min | RF 07",
+        "Absorber_Wall_X_Min | RF 08",
+        "Absorber_Blocker_Face | RF 10",
+        "Blocker_Wood | RF 11",
+        "Blocker_Supports | RF 12",
+        "Door_Assembly | RF 13",
+        "Door_Assembly | RF 14",
+        "Scanner_Static | RF 18",
+        "Scanner_Static | RF 19",
+        "Scanner_Static | RF 20",
+        "RIS_508_Mount_and_Stand | RF 21",
+        "RIS_508_Mount_and_Stand | RF 22",
+        "TX_Tripod | RF 23",
+        "TX_Tripod | RF 24",
+        "TX_Head | RF 25"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "02 Plants - reflective RIS | results",
+      "objects": [
+        "PATHS | 02 Plants - reflective RIS",
+        "HEATMAP | reflective | -90 to -20 dBm"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "02 RF - walls hidden ONLY for cutaway",
+      "objects": [
+        "Lab_Ceiling | RF 02",
+        "Wall_X_Max | RF 04",
+        "Wall_Y_Max | RF 06",
+        "Absorber_Wall_X_Max | RF 09",
+        "Pipes_All | RF 15",
+        "Light_Fixtures | RF 16",
+        "Light_Fixtures | RF 17"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "03 No plants - active RIS | results",
+      "objects": [
+        "PATHS | 03 No plants - active RIS",
+        "HEATMAP | no_plant_active | -90 to -20 dBm"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "03 RF - close-pair Ficus",
+      "objects": [
+        "Plant2_Veins",
+        "Plant2_Trunk",
+        "Plant2_Ties",
+        "Plant2_Stake",
+        "Plant2_Soil",
+        "Plant2_Saucer",
+        "Plant2_Root",
+        "Plant2_Pot",
+        "Plant2_Petioles",
+        "Plant2_Leaves",
+        "Plant2_Branches",
+        "Plant1_Veins",
+        "Plant1_Trunk",
+        "Plant1_Ties",
+        "Plant1_Stake",
+        "Plant1_Soil",
+        "Plant1_Saucer",
+        "Plant1_Root",
+        "Plant1_Pot",
+        "Plant1_Petioles",
+        "Plant1_Leaves",
+        "Plant1_Branches"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "04 Devices and presentation guides",
+      "objects": [
+        "TX_Horn_Display",
+        "Scanner_X_Bridge",
+        "Scanner_Y_Carriage",
+        "Scanner_RX_Assembly",
+        "TX | 10 dBm horn phase centre",
+        "RX TARGET | report 1.2785, 0.4653, 0.96 m",
+        "RIS physical frame | W01133",
+        "RIS | exact 508 cell centres and profiles",
+        "RX grid | 2300 phase-centre samples",
+        "Scanner AOI boundary",
+        "Scanner AOI boundary.001",
+        "Scanner AOI boundary.002",
+        "Scanner AOI boundary.003",
+        "Confirmed target cross",
+        "Confirmed target cross.001",
+        "Confirmed target cross.002",
+        "Assumed plant support plane | display only",
+        "Assumed plant support plane | display only.001"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "04 No plants - reflective RIS | results",
+      "objects": [
+        "PATHS | 04 No plants - reflective RIS",
+        "HEATMAP | no_plant_reflective | -90 to -20 dBm"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "05 Embedded simulation results",
+      "objects": [
+        "PATHS | select receiver, tile and reflection type",
+        "HEATMAP | active | -90 to -20 dBm"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "06 Cameras and lighting",
+      "objects": [
+        "CAM 1 | apparatus and paths",
+        "CAM 2 | top - exact scale",
+        "CAM 3 | plant gap",
+        "CAM 4 | entire room",
+        "Softbox",
+        "Softbox.001",
+        "Softbox.002"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "REFERENCE ONLY | original 0.75 m bench - hidden",
+      "objects": [
+        "Original bench 18",
+        "Original bench 19",
+        "Original bench 20"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "RIS glyphs - active profile",
+      "objects": [
+        "RIS cell glyphs | active ON blue, OFF dark"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    },
+    {
+      "name": "RIS glyphs - reflective profile",
+      "objects": [
+        "RIS glyphs | reflective phase states"
+      ],
+      "children": [],
+      "hide_viewport": false,
+      "hide_render": false
+    }
+  ],
+  "object_visibility": {
+    "hide_viewport_true": [],
+    "hide_render_true": [
+      "Absorber_Wall_X_Max | RF 09",
+      "Absorber_Wall_X_Min | RF 08",
+      "Lab_Ceiling | RF 02",
+      "Light_Fixtures | RF 16",
+      "Light_Fixtures | RF 17",
+      "Original bench 18",
+      "Original bench 19",
+      "Original bench 20",
+      "Pipes_All | RF 15",
+      "Scanner_RX_Assembly",
+      "Scanner_X_Bridge",
+      "Scanner_Y_Carriage",
+      "Wall_X_Max | RF 04",
+      "Wall_X_Min | RF 03",
+      "Wall_Y_Max | RF 06"
+    ]
+  },
+  "scenes": [
+    {
+      "name": "01 Plants - active RIS",
+      "frame": 1,
+      "camera": "CAM 1 | apparatus and paths",
+      "root_objects": [
+        "RIS_Custom_Target"
+      ],
+      "object_count": 79,
+      "path_objects": [
+        "PATHS | select receiver, tile and reflection type"
+      ],
+      "view_layers": [
+        {
+          "name": "ViewLayer",
+          "object_count": 79,
+          "collections": [
+            {
+              "path": "/Scene Collection",
+              "name": "Scene Collection",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/01 RF - full laboratory",
+              "name": "01 RF - full laboratory",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/02 RF - walls hidden ONLY for cutaway",
+              "name": "02 RF - walls hidden ONLY for cutaway",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/03 RF - close-pair Ficus",
+              "name": "03 RF - close-pair Ficus",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/04 Devices and presentation guides",
+              "name": "04 Devices and presentation guides",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/05 Embedded simulation results",
+              "name": "05 Embedded simulation results",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/06 Cameras and lighting",
+              "name": "06 Cameras and lighting",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/REFERENCE ONLY | original 0.75 m bench - hidden",
+              "name": "REFERENCE ONLY | original 0.75 m bench - hidden",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/RIS glyphs - active profile",
+              "name": "RIS glyphs - active profile",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            }
+          ],
+          "objects_hidden_by_eye": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ],
+          "objects_not_visible": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "02 Plants - reflective RIS",
+      "frame": 1,
+      "camera": "CAM 1 | apparatus and paths",
+      "root_objects": [],
+      "object_count": 78,
+      "path_objects": [
+        "PATHS | 02 Plants - reflective RIS"
+      ],
+      "view_layers": [
+        {
+          "name": "ViewLayer",
+          "object_count": 78,
+          "collections": [
+            {
+              "path": "/Scene Collection",
+              "name": "Scene Collection",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": false,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/01 RF - full laboratory",
+              "name": "01 RF - full laboratory",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/02 RF - walls hidden ONLY for cutaway",
+              "name": "02 RF - walls hidden ONLY for cutaway",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/03 RF - close-pair Ficus",
+              "name": "03 RF - close-pair Ficus",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/04 Devices and presentation guides",
+              "name": "04 Devices and presentation guides",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/06 Cameras and lighting",
+              "name": "06 Cameras and lighting",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/REFERENCE ONLY | original 0.75 m bench - hidden",
+              "name": "REFERENCE ONLY | original 0.75 m bench - hidden",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/RIS glyphs - reflective profile",
+              "name": "RIS glyphs - reflective profile",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/02 Plants - reflective RIS | results",
+              "name": "02 Plants - reflective RIS | results",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            }
+          ],
+          "objects_hidden_by_eye": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ],
+          "objects_not_visible": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "03 No plants - active RIS",
+      "frame": 1,
+      "camera": "CAM 1 | apparatus and paths",
+      "root_objects": [],
+      "object_count": 56,
+      "path_objects": [
+        "PATHS | 03 No plants - active RIS"
+      ],
+      "view_layers": [
+        {
+          "name": "ViewLayer",
+          "object_count": 56,
+          "collections": [
+            {
+              "path": "/Scene Collection",
+              "name": "Scene Collection",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": false,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/01 RF - full laboratory",
+              "name": "01 RF - full laboratory",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/02 RF - walls hidden ONLY for cutaway",
+              "name": "02 RF - walls hidden ONLY for cutaway",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/04 Devices and presentation guides",
+              "name": "04 Devices and presentation guides",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/06 Cameras and lighting",
+              "name": "06 Cameras and lighting",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/REFERENCE ONLY | original 0.75 m bench - hidden",
+              "name": "REFERENCE ONLY | original 0.75 m bench - hidden",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/RIS glyphs - active profile",
+              "name": "RIS glyphs - active profile",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/03 No plants - active RIS | results",
+              "name": "03 No plants - active RIS | results",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            }
+          ],
+          "objects_hidden_by_eye": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ],
+          "objects_not_visible": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "04 No plants - reflective RIS",
+      "frame": 1,
+      "camera": "CAM 1 | apparatus and paths",
+      "root_objects": [],
+      "object_count": 56,
+      "path_objects": [
+        "PATHS | 04 No plants - reflective RIS"
+      ],
+      "view_layers": [
+        {
+          "name": "ViewLayer",
+          "object_count": 56,
+          "collections": [
+            {
+              "path": "/Scene Collection",
+              "name": "Scene Collection",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": false,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/01 RF - full laboratory",
+              "name": "01 RF - full laboratory",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/02 RF - walls hidden ONLY for cutaway",
+              "name": "02 RF - walls hidden ONLY for cutaway",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/04 Devices and presentation guides",
+              "name": "04 Devices and presentation guides",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/06 Cameras and lighting",
+              "name": "06 Cameras and lighting",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/REFERENCE ONLY | original 0.75 m bench - hidden",
+              "name": "REFERENCE ONLY | original 0.75 m bench - hidden",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/RIS glyphs - reflective profile",
+              "name": "RIS glyphs - reflective profile",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            },
+            {
+              "path": "/Scene Collection/04 No plants - reflective RIS | results",
+              "name": "04 No plants - reflective RIS | results",
+              "exclude": false,
+              "hide_viewport": false,
+              "is_visible": true,
+              "holdout": false,
+              "indirect_only": false
+            }
+          ],
+          "objects_hidden_by_eye": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ],
+          "objects_not_visible": [
+            "Wall_X_Min | RF 03",
+            "Absorber_Wall_X_Min | RF 08",
+            "Lab_Ceiling | RF 02",
+            "Wall_X_Max | RF 04",
+            "Wall_Y_Max | RF 06",
+            "Absorber_Wall_X_Max | RF 09",
+            "Pipes_All | RF 15",
+            "Light_Fixtures | RF 16",
+            "Light_Fixtures | RF 17",
+            "Scanner_X_Bridge",
+            "Scanner_Y_Carriage",
+            "Scanner_RX_Assembly",
+            "Original bench 18",
+            "Original bench 19",
+            "Original bench 20"
+          ]
+        }
+      ]
+    }
+  ],
+  "path_objects": [
+    {
+      "name": "PATHS | 02 Plants - reflective RIS",
+      "data_name": "PATHS | select receiver, tile and reflection type",
+      "collections": [
+        "02 Plants - reflective RIS | results"
+      ],
+      "modifiers": [
+        {
+          "name": "PATH FILTERS - presentation controls",
+          "group": "RIS path controls | existing Sionna filters + receiver and cell",
+          "show_viewport": true,
+          "show_render": true,
+          "inputs": {
+            "Geometry": {
+              "type": "FALLBACK"
+            },
+            "Receiver index (-1 = all)": {
+              "value": 2300,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Tile index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Cell index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show RIS branch": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show TX bypass": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflection class (0 all; 1 none; 2 room; 3 plant)": {
+              "value": 0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Paths per class (0 = all saved)": {
+              "value": 12,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflective RIS mode": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Without plants": {
+              "value": false,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Minimum path gain (dB)": {
+              "value": -180.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Maximum delay (ns)": {
+              "value": 100.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Path radius (m)": {
+              "value": 0.0010000000474974513,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Trim path": {
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "No extra reflection": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflections": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Transmission only": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "type": "BOOLEAN",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "position",
+          "type": "FLOAT_VECTOR",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "sharp_face",
+          "type": "BOOLEAN",
+          "domain": "FACE",
+          "count": 0
+        },
+        {
+          "name": "path_uid_num",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "point_order",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "frame",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "x",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "y",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "z",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "receiver_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "cell_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "tile_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "branch_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflection_category",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "delay_ns",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "path_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_1",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_2",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        }
+      ]
+    },
+    {
+      "name": "PATHS | 03 No plants - active RIS",
+      "data_name": "PATHS | select receiver, tile and reflection type",
+      "collections": [
+        "03 No plants - active RIS | results"
+      ],
+      "modifiers": [
+        {
+          "name": "PATH FILTERS - presentation controls",
+          "group": "RIS path controls | existing Sionna filters + receiver and cell",
+          "show_viewport": true,
+          "show_render": true,
+          "inputs": {
+            "Geometry": {
+              "type": "FALLBACK"
+            },
+            "Receiver index (-1 = all)": {
+              "value": 2300,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Tile index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Cell index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show RIS branch": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show TX bypass": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflection class (0 all; 1 none; 2 room; 3 plant)": {
+              "value": 0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Paths per class (0 = all saved)": {
+              "value": 12,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflective RIS mode": {
+              "value": false,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Without plants": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Minimum path gain (dB)": {
+              "value": -180.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Maximum delay (ns)": {
+              "value": 100.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Path radius (m)": {
+              "value": 0.0010000000474974513,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Trim path": {
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "No extra reflection": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflections": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Transmission only": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "type": "BOOLEAN",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "position",
+          "type": "FLOAT_VECTOR",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "sharp_face",
+          "type": "BOOLEAN",
+          "domain": "FACE",
+          "count": 0
+        },
+        {
+          "name": "path_uid_num",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "point_order",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "frame",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "x",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "y",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "z",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "receiver_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "cell_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "tile_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "branch_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflection_category",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "delay_ns",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "path_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_1",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_2",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        }
+      ]
+    },
+    {
+      "name": "PATHS | 04 No plants - reflective RIS",
+      "data_name": "PATHS | select receiver, tile and reflection type",
+      "collections": [
+        "04 No plants - reflective RIS | results"
+      ],
+      "modifiers": [
+        {
+          "name": "PATH FILTERS - presentation controls",
+          "group": "RIS path controls | existing Sionna filters + receiver and cell",
+          "show_viewport": true,
+          "show_render": true,
+          "inputs": {
+            "Geometry": {
+              "type": "FALLBACK"
+            },
+            "Receiver index (-1 = all)": {
+              "value": 2300,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Tile index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Cell index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show RIS branch": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show TX bypass": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflection class (0 all; 1 none; 2 room; 3 plant)": {
+              "value": 0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Paths per class (0 = all saved)": {
+              "value": 12,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflective RIS mode": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Without plants": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Minimum path gain (dB)": {
+              "value": -180.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Maximum delay (ns)": {
+              "value": 100.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Path radius (m)": {
+              "value": 0.0010000000474974513,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Trim path": {
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "No extra reflection": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflections": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Transmission only": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "type": "BOOLEAN",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "position",
+          "type": "FLOAT_VECTOR",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "sharp_face",
+          "type": "BOOLEAN",
+          "domain": "FACE",
+          "count": 0
+        },
+        {
+          "name": "path_uid_num",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "point_order",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "frame",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "x",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "y",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "z",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "receiver_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "cell_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "tile_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "branch_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflection_category",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "delay_ns",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "path_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_1",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_2",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        }
+      ]
+    },
+    {
+      "name": "PATHS | select receiver, tile and reflection type",
+      "data_name": "PATHS | select receiver, tile and reflection type",
+      "collections": [
+        "05 Embedded simulation results"
+      ],
+      "modifiers": [
+        {
+          "name": "PATH FILTERS - presentation controls",
+          "group": "RIS path controls | existing Sionna filters + receiver and cell",
+          "show_viewport": true,
+          "show_render": true,
+          "inputs": {
+            "Geometry": {
+              "type": "FALLBACK"
+            },
+            "Receiver index (-1 = all)": {
+              "value": 2300,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Tile index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Cell index (-1 = all)": {
+              "value": -1,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show RIS branch": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Show TX bypass": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflection class (0 all; 1 none; 2 room; 3 plant)": {
+              "value": 0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Paths per class (0 = all saved)": {
+              "value": 12,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflective RIS mode": {
+              "value": false,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Without plants": {
+              "value": false,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Minimum path gain (dB)": {
+              "value": -180.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Maximum delay (ns)": {
+              "value": 100.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Path radius (m)": {
+              "value": 0.0010000000474974513,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Trim path": {
+              "value": 1.0,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "No extra reflection": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Reflections": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            },
+            "Transmission only": {
+              "value": true,
+              "type": "VALUE",
+              "attribute_name": ""
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "name": ".select_vert",
+          "type": "BOOLEAN",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "position",
+          "type": "FLOAT_VECTOR",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "sharp_face",
+          "type": "BOOLEAN",
+          "domain": "FACE",
+          "count": 0
+        },
+        {
+          "name": "path_uid_num",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "point_order",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "frame",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "x",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "y",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "z",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "receiver_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "cell_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "tile_index",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "branch_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflection_category",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_active_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_reflective_class_rank",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "no_plant_interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "interaction_type_id",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "delay_ns",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "path_gain_db",
+          "type": "FLOAT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_1",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        },
+        {
+          "name": "background_object_2",
+          "type": "INT",
+          "domain": "POINT",
+          "count": 776009
+        }
+      ]
+    }
+  ],
+  "node_groups": [
+    {
+      "name": "RIS path controls | existing Sionna filters + receiver and cell",
+      "node_count": 57,
+      "link_count": 82,
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Socket_0",
+          "in_out": "OUTPUT",
+          "socket_type": "NodeSocketGeometry",
+          "description": ""
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Socket_1",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketGeometry",
+          "description": ""
+        },
+        {
+          "name": "Receiver index (-1 = all)",
+          "identifier": "Socket_2",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketInt",
+          "default_value": 2300,
+          "min_value": -1,
+          "max_value": 2300,
+          "description": "0..2299 scanner points; 2300 confirmed 3D focusing target."
+        },
+        {
+          "name": "Tile index (-1 = all)",
+          "identifier": "Socket_3",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketInt",
+          "default_value": -1,
+          "min_value": -1,
+          "max_value": 3,
+          "description": ""
+        },
+        {
+          "name": "Cell index (-1 = all)",
+          "identifier": "Socket_4",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketInt",
+          "default_value": -1,
+          "min_value": -1,
+          "max_value": 507,
+          "description": ""
+        },
+        {
+          "name": "Show RIS branch",
+          "identifier": "Socket_5",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": true,
+          "description": ""
+        },
+        {
+          "name": "Show TX bypass",
+          "identifier": "Socket_6",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": true,
+          "description": ""
+        },
+        {
+          "name": "Reflection class (0 all; 1 none; 2 room; 3 plant)",
+          "identifier": "Socket_7",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketInt",
+          "default_value": 0,
+          "min_value": 0,
+          "max_value": 3,
+          "description": "Extra reflection along either hop, excluding the RIS interaction itself."
+        },
+        {
+          "name": "Paths per class (0 = all saved)",
+          "identifier": "Socket_8",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketInt",
+          "default_value": 12,
+          "min_value": 0,
+          "max_value": 20000,
+          "description": "Strongest saved paths per receiver, branch and reflection class. Includes weak background paths as well as the direct RIS branch."
+        },
+        {
+          "name": "Reflective RIS mode",
+          "identifier": "Socket_9",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Without plants",
+          "identifier": "Socket_10",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Minimum path gain (dB)",
+          "identifier": "Socket_11",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": -180.0,
+          "min_value": -300.0,
+          "max_value": 0.0,
+          "description": ""
+        },
+        {
+          "name": "Maximum delay (ns)",
+          "identifier": "Socket_12",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 100.0,
+          "min_value": 0.0,
+          "max_value": 1000.0,
+          "description": ""
+        },
+        {
+          "name": "Path radius (m)",
+          "identifier": "Socket_13",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 0.0010000000474974513,
+          "min_value": 0.0,
+          "max_value": 0.019999999552965164,
+          "description": ""
+        },
+        {
+          "name": "Trim path",
+          "identifier": "Socket_14",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 1.0,
+          "min_value": 0.0,
+          "max_value": 1.0,
+          "description": ""
+        },
+        {
+          "name": "No extra reflection",
+          "identifier": "Socket_15",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": true,
+          "description": ""
+        },
+        {
+          "name": "Reflections",
+          "identifier": "Socket_16",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": true,
+          "description": ""
+        },
+        {
+          "name": "Transmission only",
+          "identifier": "Socket_17",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": true,
+          "description": ""
+        }
+      ],
+      "named_attribute_reads": [
+        {
+          "node": "Named Attribute",
+          "attribute": "receiver_index",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.001",
+          "attribute": "tile_index",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.002",
+          "attribute": "cell_index",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.003",
+          "attribute": "branch_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.004",
+          "attribute": "branch_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.005",
+          "attribute": "reflection_category",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.006",
+          "attribute": "active_class_rank",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.007",
+          "attribute": "reflective_class_rank",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.008",
+          "attribute": "no_plant_active_class_rank",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.009",
+          "attribute": "no_plant_reflective_class_rank",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.010",
+          "attribute": "active_gain_db",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.011",
+          "attribute": "reflective_gain_db",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.012",
+          "attribute": "no_plant_active_gain_db",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.013",
+          "attribute": "no_plant_reflective_gain_db",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.014",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.015",
+          "attribute": "no_plant_interaction_type_id",
+          "data_type": "INT"
+        }
+      ],
+      "named_attribute_writes": [
+        {
+          "node": "Store Named Attribute",
+          "attribute": "path_gain_db",
+          "data_type": "FLOAT",
+          "domain": "POINT"
+        },
+        {
+          "node": "Store Named Attribute.001",
+          "attribute": "interaction_type_id",
+          "data_type": "INT",
+          "domain": "POINT"
+        }
+      ],
+      "nested_group_bindings": [
+        {
+          "node": "Group",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Geometry",
+              "id": "Socket_0",
+              "enabled": true,
+              "default": null,
+              "source": [
+                "Store Named Attribute.001.Geometry"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "Path gain less than",
+              "id": "Socket_2",
+              "enabled": true,
+              "default": -140.0,
+              "source": [
+                "Group Input.Socket_11"
+              ]
+            },
+            {
+              "index": 2,
+              "name": "Delay less than (ns)",
+              "id": "Socket_5",
+              "enabled": true,
+              "default": 10000.0,
+              "source": [
+                "Group Input.Socket_12"
+              ]
+            },
+            {
+              "index": 3,
+              "name": "Trim path",
+              "id": "Socket_6",
+              "enabled": true,
+              "default": 1.0,
+              "source": [
+                "Group Input.Socket_14"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Path radius",
+              "id": "Socket_7",
+              "enabled": true,
+              "default": 0.10000000149011612,
+              "source": [
+                "Group Input.Socket_13"
+              ]
+            },
+            {
+              "index": 5,
+              "name": "Paths LOS",
+              "id": "Socket_8",
+              "enabled": true,
+              "default": false,
+              "source": [
+                "Group Input.Socket_15"
+              ]
+            },
+            {
+              "index": 6,
+              "name": "Paths Reflection",
+              "id": "Socket_9",
+              "enabled": true,
+              "default": false,
+              "source": [
+                "Group Input.Socket_16"
+              ]
+            },
+            {
+              "index": 7,
+              "name": "Paths Scattering",
+              "id": "Socket_10",
+              "enabled": true,
+              "default": false,
+              "source": []
+            },
+            {
+              "index": 8,
+              "name": "Paths Diffraction",
+              "id": "Socket_11",
+              "enabled": true,
+              "default": false,
+              "source": []
+            },
+            {
+              "index": 9,
+              "name": "Paths Refraction",
+              "id": "Socket_12",
+              "enabled": true,
+              "default": false,
+              "source": [
+                "Group Input.Socket_17"
+              ]
+            },
+            {
+              "index": 10,
+              "name": "Color Filter - Path single color",
+              "id": "Socket_4",
+              "enabled": true,
+              "default": false,
+              "source": []
+            },
+            {
+              "index": 11,
+              "name": "Path color slider",
+              "id": "Socket_3",
+              "enabled": true,
+              "default": 1000.0,
+              "source": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sionna_Paths | embedded straight paths",
+      "node_count": 75,
+      "link_count": 75,
+      "interface": [
+        {
+          "name": "Geometry",
+          "identifier": "Socket_1",
+          "in_out": "OUTPUT",
+          "socket_type": "NodeSocketGeometry",
+          "description": ""
+        },
+        {
+          "name": "Geometry",
+          "identifier": "Socket_0",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketGeometry",
+          "description": ""
+        },
+        {
+          "name": "Path gain less than",
+          "identifier": "Socket_2",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": -140.0,
+          "min_value": -300.0,
+          "max_value": 0.0,
+          "description": ""
+        },
+        {
+          "name": "Delay less than (ns)",
+          "identifier": "Socket_5",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 10000.0,
+          "min_value": 0.0,
+          "max_value": 10000.0,
+          "description": ""
+        },
+        {
+          "name": "Trim path",
+          "identifier": "Socket_6",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 1.0,
+          "min_value": 0.0,
+          "max_value": 1.0,
+          "description": ""
+        },
+        {
+          "name": "Path radius",
+          "identifier": "Socket_7",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 0.10000000149011612,
+          "min_value": 0.0,
+          "max_value": 100.0,
+          "description": "Distance of the points from the origin"
+        },
+        {
+          "name": "Paths LOS",
+          "identifier": "Socket_8",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Paths Reflection",
+          "identifier": "Socket_9",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Paths Scattering",
+          "identifier": "Socket_10",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Paths Diffraction",
+          "identifier": "Socket_11",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Paths Refraction",
+          "identifier": "Socket_12",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Color Filter - Path single color",
+          "identifier": "Socket_4",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketBool",
+          "default_value": false,
+          "description": ""
+        },
+        {
+          "name": "Path color slider",
+          "identifier": "Socket_3",
+          "in_out": "INPUT",
+          "socket_type": "NodeSocketFloat",
+          "default_value": 1000.0,
+          "min_value": 0.0,
+          "max_value": 10000.0,
+          "description": ""
+        }
+      ],
+      "named_attribute_reads": [
+        {
+          "node": "Named Attribute",
+          "attribute": "x",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.001",
+          "attribute": "y",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.002",
+          "attribute": "z",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.003",
+          "attribute": "path_uid_num",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.004",
+          "attribute": "frame",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.005",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.006",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.007",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.008",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.009",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.010",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.011",
+          "attribute": "path_gain_db",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.012",
+          "attribute": "delay_ns",
+          "data_type": "FLOAT"
+        },
+        {
+          "node": "Named Attribute.013",
+          "attribute": "interaction_type_id",
+          "data_type": "INT"
+        },
+        {
+          "node": "Named Attribute.014",
+          "attribute": "point_order",
+          "data_type": "FLOAT"
+        }
+      ],
+      "named_attribute_writes": [
+        {
+          "node": "Store Named Attribute",
+          "attribute": "path_color",
+          "data_type": "FLOAT",
+          "domain": "POINT"
+        }
+      ],
+      "nested_group_bindings": []
+    }
+  ],
+  "source_path_attribute_ranges": [
+    {
+      "data_name": "PATHS | select receiver, tile and reflection type",
+      "attributes": {
+        "path_uid_num": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 240984.0
+        },
+        "point_order": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 4.0
+        },
+        "frame": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 1.0,
+          "counts": {
+            "1": 776009
+          }
+        },
+        "x": {
+          "count": 776009,
+          "min": 0.7282329201698303,
+          "max": 2.972289562225342
+        },
+        "y": {
+          "count": 776009,
+          "min": 0.12059902399778366,
+          "max": 5.21750020980835
+        },
+        "z": {
+          "count": 776009,
+          "min": -1.63337664558232e-16,
+          "max": 3.5999999046325684
+        },
+        "receiver_index": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 2300.0
+        },
+        "cell_index": {
+          "count": 776009,
+          "min": -1.0,
+          "max": 507.0
+        },
+        "tile_index": {
+          "count": 776009,
+          "min": -1.0,
+          "max": 3.0,
+          "counts": {
+            "-1": 16470,
+            "0": 149975,
+            "1": 92115,
+            "2": 247138,
+            "3": 270311
+          }
+        },
+        "branch_id": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 2.0,
+          "counts": {
+            "1": 759539,
+            "2": 16470
+          }
+        },
+        "reflection_category": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 2.0,
+          "counts": {
+            "0": 568101,
+            "1": 100404,
+            "2": 107504
+          }
+        },
+        "active_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 5153.0
+        },
+        "reflective_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 5153.0
+        },
+        "active_gain_db": {
+          "count": 776009,
+          "min": -3000.0,
+          "max": -58.99873733520508
+        },
+        "reflective_gain_db": {
+          "count": 776009,
+          "min": -3000.0,
+          "max": -58.99873733520508
+        },
+        "no_plant_active_gain_db": {
+          "count": 776009,
+          "min": -3000.0,
+          "max": -58.99873733520508
+        },
+        "no_plant_reflective_gain_db": {
+          "count": 776009,
+          "min": -3000.0,
+          "max": -58.99873733520508
+        },
+        "active_class_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 3935.0
+        },
+        "reflective_class_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 3935.0
+        },
+        "no_plant_active_class_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 3935.0
+        },
+        "no_plant_reflective_class_rank": {
+          "count": 776009,
+          "min": 1.0,
+          "max": 3935.0
+        },
+        "no_plant_interaction_type_id": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 2.0,
+          "counts": {
+            "0": 568101,
+            "2": 207908
+          }
+        },
+        "interaction_type_id": {
+          "count": 776009,
+          "min": 0.0,
+          "max": 6.0,
+          "counts": {
+            "0": 253047,
+            "2": 207908,
+            "6": 315054
+          }
+        },
+        "delay_ns": {
+          "count": 776009,
+          "min": 8.315558433532715,
+          "max": 33.037845611572266
+        },
+        "path_gain_db": {
+          "count": 776009,
+          "min": -3000.0,
+          "max": -58.99873733520508
+        },
+        "background_object_1": {
+          "count": 776009,
+          "min": -1.0,
+          "max": 21.0
+        },
+        "background_object_2": {
+          "count": 776009,
+          "min": -1.0,
+          "max": 18.0
+        }
+      }
+    }
+  ]
+}

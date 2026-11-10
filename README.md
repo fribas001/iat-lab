@@ -14,6 +14,15 @@ scene variants, cameras, path controls, materials and embedded results are retai
 | 03 No plants - active RIS | Matched computational baseline |
 | 04 No plants - reflective RIS | Matched computational baseline |
 
+## Understand the model
+
+- [Scene organization and visibility](docs/SCENE_GUIDE.md): all 12 collections,
+  scene membership, shared objects, cameras and the exact cutaway visibility rules.
+- [Geometry Nodes and controls](docs/GEOMETRY_NODES.md): both groups, flow diagrams,
+  every exposed control, saved scene settings and practical filtering recipes.
+- [Inspection record](docs/scene_reference.json): machine-readable collection
+  contents, visibility flags, socket interfaces and saved modifier values.
+
 ## Repository layout
 
 ```text
@@ -28,7 +37,7 @@ data/embedded/                 text and numerical records extracted from the mod
 scripts/                      thin Blender entry points
 examples/                     Python API example
 tests/                        Python checks and Blender integration smoke test
-docs/                         architecture, workflows and provenance
+docs/                         scene/node guides, architecture, workflows and provenance
 .github/workflows/             automated Python and input-integrity checks
 build/, runs/, renders/        local generated outputs, ignored by Git
 ```
