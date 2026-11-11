@@ -9,29 +9,39 @@ inspected on 10 November 2026. No MolecularNodes code is copied.
 | --- | --- | --- |
 | `iat_lab.project` | Resolve project paths; verify protected inputs | Python standard library |
 | `iat_lab.cli` | Expose the project API through commands | Project API |
-| `iat_lab.blender` | Read scenes, transforms, node interfaces and embedded records | Blender `bpy` |
-| `iat_lab.nodes` | Inspect and extract the existing Geometry Nodes groups | Blender `bpy` |
+| `iat_lab.blender` | Read scene state; export evaluated RF meshes and explicit Sionna XML | Blender `bpy` |
+| `iat_lab.nodes` | Build environment controls; inspect and extract Geometry Nodes groups | Blender `bpy` |
+| `iat_lab.materials` | Evaluate and validate the radio-material catalog | Python standard library |
+| `iat_lab.sionna` | Load exported scenes and handle pinned-runtime compatibility | Optional Sionna RT 2.2, imported only on use |
 | `scripts/` | Small command entry points | Public functions above |
-| `assets/`, `scenes/`, `data/` | Original asset, editable model and reviewable metadata | Files in the checkout |
+| `assets/`, `scenes/`, `data/`, `config/` | Original asset, editable model, protected references and editable configuration | Files in the checkout |
 
 `import iat_lab` is safe outside Blender. An installed wheel contains Python
 code; it does not bundle lab models or resolve assets relative to site-packages.
 The caller supplies a checkout root.
 
-MolecularNodes builds its node library from versioned Python definitions. Here,
-the original `.blend` remains the authoritative definition of the two inherited
-graphs. `build_node_library.py` extracts those graphs and their dependencies into
-an ignored reusable library. The JSON inventory records sockets, connections
-and selected node settings for review. Its original modifier custom-property
-reader does not capture Blender 5.2's RNA-based input values, and it does not
-capture per-view-layer eye states. The documentation's separate
-[inspection record](scene_reference.json) records these baseline details;
-[Geometry Nodes and controls](GEOMETRY_NODES.md#8-inspecting-the-saved-controls)
-explains how to read the actual modifier values. Neither inventory is a lossless
-serializer that can rebuild the lab or the graphs on its own.
+The new environment graphs have versioned Python definitions in
+`iat_lab.nodes.parametric`, following the node-library-builder approach. The
+protected original supplies detailed mesh topology. Building adds controllers,
+member transforms and material assignments while preserving the default layout.
+Assembly values pass through named attributes on a controller point and are
+read by Object Info / Sample Index nodes. There are no runtime Python handlers.
 
-This boundary keeps the initial repository faithful to the supplied model.
-Future graph refactoring can introduce versioned Python builders and compare
-their evaluated geometry against this baseline before replacing the inherited
-graphs. UI modules and extension packaging can be added when actual interactive
-features exist; the first version does not ship an empty add-on.
+The original `.blend` remains the authoritative definition of the two inherited
+path-display graphs. `build_node_library.py` extracts all loaded Geometry Nodes
+and dependencies into an ignored reusable library. Schema-2 inventory captures
+actual Blender 5.2 modifier inputs and view-layer eye states. The immutable
+initial inventory omitted those fields; the separate
+[inspection record](scene_reference.json) remains baseline evidence. Inventories
+are review metadata, not lossless serializers.
+
+The exporter evaluates geometry independently of cutaway hiding, uses explicit
+RF inclusion, splits by catalog material and converts six room slabs to single
+surfaces with thickness. It writes deterministic XML/PLY plus provenance, RIS
+cell data and receiver samples. Sionna is an optional external runtime; neither
+the standard-library API nor Blender's controls import it.
+
+This preserves the archived study while adding an editable geometry and export
+workflow. Active RIS propagation, updated heatmaps and material characterization
+remain separate scientific work, as described in [Sionna export](SIONNA_EXPORT.md)
+and [radio materials](RADIO_MATERIALS.md).

@@ -1,9 +1,23 @@
-# Scene organization and visibility
+# Baseline scene organization and visibility
 
-This guide describes the saved `scenes/IAT_Lab.blend`, inspected directly in
+This reference describes the protected original `.blend`, inspected directly in
 Blender 5.2.3 LTS on 10 November 2026. It covers all **four scenes, 12 collections,
 86 object datablocks and two Geometry Nodes groups**. Counts include cameras,
 lights and helper objects. The model was inspected without saving it.
+
+The current working model adds `00 IAT Controls` with 19 controllers and one
+optional Y-max absorber. It has 21 collections, 106 objects and 44 node groups;
+scene object counts are 99, 98, 76 and 76. Original empty anchors now use
+non-rendering one-point meshes. The additional absorber starts disabled and
+hidden; the original 15 hidden objects retain their flags. See
+[Parametric environment](PARAMETRIC_ENVIRONMENT.md) for the current controls.
+Each scene's results parent now has separate `Paths | <scene>` and
+`Heatmap | <scene>` children. Toggle either child independently in the Outliner;
+the parent toggles both. These eight new subcollections retain the existing
+per-scene path/heatmap objects and their settings.
+
+The tables and hash below describe the baseline; `scene_reference.json` remains
+unchanged evidence of that original file.
 
 For the path graphs and every exposed control, continue to
 [Geometry Nodes and controls](GEOMETRY_NODES.md). The compact
@@ -53,7 +67,8 @@ to scene 02.
 
 ## 2. Collection reference
 
-Counts below are direct object memberships. No collection has child collections.
+Counts below are baseline direct object memberships. In that baseline, no
+collection has child collections; the current results hierarchy is described above.
 An object linked into several scenes is still one shared object datablock.
 
 | Exact collection name | Objects | Linked scenes | Purpose and contents |
@@ -202,3 +217,4 @@ collection membership, object transforms and graph structure. It does not
 record view-layer eye states; its modifier custom-property fields also omit
 Blender 5.2's RNA-based input values. Those values were read directly for this
 guide, as explained in the [node guide](GEOMETRY_NODES.md#8-inspecting-the-saved-controls).
+The current snapshot API additionally records actual modifier inputs and eye states.

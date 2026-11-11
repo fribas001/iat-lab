@@ -1,0 +1,96 @@
+{
+  "engine": "Cycles",
+  "device": "CPU",
+  "blender": "5.2.3 LTS",
+  "scene": "01 Plants - active RIS",
+  "source_blend_sha256": "4a92cec8e229edd2f16bb150d1dc5ae31362304be58e0520bed4a88b349c0d79",
+  "samples": 64,
+  "adaptive_threshold": 0.035,
+  "denoiser": "OpenImageDenoise",
+  "seed": 42,
+  "resolution": [
+    1440,
+    900
+  ],
+  "view_transform": "AgX",
+  "exposure": 0.0,
+  "walls": "all four walls, floor and ceiling visible",
+  "revealed_objects": [
+    "Absorber_Wall_X_Max | RF 09",
+    "Absorber_Wall_X_Min | RF 08",
+    "Absorber_Wall_Y_Max | optional",
+    "Absorber_Wall_Y_Min | RF 07",
+    "Lab_Ceiling | RF 02",
+    "Lab_Floor | RF 01",
+    "Light_Fixtures | RF 16",
+    "Light_Fixtures | RF 17",
+    "Pipes_All | RF 15",
+    "Wall_X_Max | RF 04",
+    "Wall_X_Min | RF 03",
+    "Wall_Y_Max | RF 06",
+    "Wall_Y_Min | RF 05"
+  ],
+  "interior_lights": [
+    [
+      [
+        1.7,
+        1.45,
+        3.1
+      ],
+      [
+        1.7,
+        1.45,
+        0.0
+      ],
+      450,
+      2.0
+    ],
+    [
+      [
+        1.7,
+        4.0,
+        3.1
+      ],
+      [
+        1.7,
+        3.0,
+        0.0
+      ],
+      300,
+      2.0
+    ],
+    [
+      [
+        0.55,
+        4.4,
+        2.7
+      ],
+      [
+        1.7,
+        1.3,
+        1.0
+      ],
+      180,
+      1.5
+    ]
+  ],
+  "archived_results_visible": true,
+  "views": {
+    "detail": {
+      "camera": "Preview interior detail",
+      "position": [
+        0.55,
+        2.75,
+        1.7
+      ],
+      "target": [
+        1.35,
+        0.67,
+        1.18
+      ],
+      "lens_mm": 35,
+      "file": "detail.png",
+      "sha256": "d4fbc0016d4fe34cbfbeb97393fb155fe424adf0a087966d8b961ae828d2ffec"
+    }
+  }
+}

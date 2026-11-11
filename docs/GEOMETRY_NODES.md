@@ -1,8 +1,12 @@
-# Geometry Nodes and path controls
+# Archived path Geometry Nodes and controls
 
-The model contains two shared Geometry Nodes groups. Together they turn saved
+The model retains two shared path-display Geometry Nodes groups. Together they turn saved
 propagation-path records into visible tubes. They select and display existing
 results; they do not generate plants or run a radio simulation.
+
+The new environment groups are covered in [Parametric environment](PARAMETRIC_ENVIRONMENT.md).
+This document describes the two inherited path graphs, whose wiring and saved
+inputs are retained.
 
 This guide describes the wiring and values read directly from
 `scenes/IAT_Lab.blend` in Blender 5.2.3 LTS on 10 November 2026. For collection
@@ -316,10 +320,11 @@ properties; see the official
 The repository's original inventory captures group-interface defaults and node
 connections, but its modifier custom-property fields do not capture those new
 input values. Do not use an empty modifier custom-property dictionary to infer
-that the scene uses interface defaults.
+that the scene uses interface defaults. Current schema-2 snapshots now include
+actual values in `modifier_inputs` and eye states in `view_layers`.
 
 This read-only snippet can be run in Blender's Python Console, using `exec` for
-the multiline block, or from the Text Editor. It prints each path object's actual
+the multiline block, or from the Text Editor. It prints each Geometry Nodes modifier's actual
 5.2 input values and their input modes without saving the file:
 
 ```python

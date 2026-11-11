@@ -1,0 +1,132 @@
+RIS SCHEMATICS REBUILT FROM THE PROJECT GEOMETRY
+14 October 2026
+
+This set replaces the earlier free-form image-generation illustrations for
+technical use. No generative image model was used for these new figures.
+
+DELIVERABLES
+figures/01_RIS_model.png / .svg
+figures/02_Single_RIS_benchmark.png / .svg
+figures/03_Four_RIS_Case3.png / .svg
+figures/02_Single_RIS_benchmark_top_view.png / .svg
+figures/03_Four_RIS_Case3_top_view.png / .svg
+output/pdf/RIS_Model_Based_Schematics.pdf: the three complete figures.
+blender/: editable figure-only Blender scenes built from the archived meshes.
+renders/: orthographic model renders used in the figures.
+data/: geometry snapshots, source hashes, paths and verification records.
+
+GEOMETRY BASIS
+The plans are orthographic projections of the original exported triangle
+meshes, not drawings from guessed object dimensions. Projected triangles are
+unioned to recover each object's footprint. Axes have equal physical scale.
+The render uses those same meshes and the aperture display meshes extracted
+from the prepared Blender projects. The source models retain their existing
+approximation of the laboratory; accurate reproduction of the model does not
+turn an estimated laboratory dimension into a measured one.
+
+The single-RIS configuration is taken from the corrected 13 October run:
+RIS_Radpour_Benchmark_2026-10-13/runs/lab_virtual_probe/reflective_P1
+and its P2 counterpart, with the corrected 1,380-point receiver grid.
+The four-RIS configuration is taken from:
+RIS_4RIS_NoPlant_Baseline_2026-10-13/runs/lab_virtual_probe/reflective_figure_xy.
+The stand reflection comes from the later object-attribution audit and its
+native cached TX, reflection and receiver coordinates.
+
+The supplied ElementPositions RIS2cAll_2 drawing was inspected for the four-tile
+arrangement and coordinate orientation. IAT_Lab_Blueprint was inspected for
+room dimensions. Laboratory photos were used to check the object arrangement.
+Their approximate appearance was not substituted for the saved mesh geometry.
+
+COORDINATES AND STRAIGHT PATHS
+Horizontal plot axis is paper y; vertical axis is paper x, increasing downward.
+For the adopted model frame:
+  paper y = RIS centre world X - world X
+  paper x = world Y - RIS centre world Y
+Front views use paper y and height relative to the RIS centre.
+Cell positions, target positions and receiver arrays are read directly from
+the saved configurations. The complete 127 / 508 cell sets are plotted.
+The receiver plans contain all 1,380 / 2,300 sample points.
+
+Each propagation leg is a straight line between its saved 3D endpoints.
+The stand route consists of two straight segments joined at the actual cached
+reflection point. No curved paths or invented reflection vertices are used.
+Segment/triangle tests check for interior occlusions. The direct TX-target
+diagnostic is drawn only up to its FIRST actual blocker intersection, ending
+with an X. A crossing of a footprint in the top projection need not imply a
+3D obstruction: object and ray heights are included in the visibility check.
+The single-RIS 1.86 m and 1.40 m annotations are three-dimensional distances,
+not lengths measured in the horizontal projection.
+
+IMPORTANT: SINGLE-RIS DISPLAY REGISTRATION
+Inspection found that the archived single-RIS support and aperture display
+have identity world transforms and vertices local to the origin, while the
+saved RIS_REFERENCE anchor and numerical cells are at approximately
+(1.65, 0.15, 1.39) m. The stand consequently extends below the floor in that
+archived file. The four-RIS geometry does not have this discrepancy.
+
+For the FIGURE COPY ONLY, the single-RIS support and aperture display are
+translated by the saved RIS anchor. This restores the placement explicitly
+defined by the model's anchor; no RF map, fitted position or photo-derived
+offset was used. Object dimensions and orientation are preserved. The
+translation is disclosed on figure 2 and in display_registration.json.
+The original Blender file, exported simulation scene, RIS states, materials
+and reported results have NOT been changed. Therefore the illustration must
+not be described as evidence that the archived single-RIS room-export bug has
+already been repaired or its propagation effect assessed.
+
+RENDERING SIMPLIFICATIONS
+The 3D figure is an orthographic cutaway. Side/front walls, ceiling and overhead
+services are omitted from the illustration for visibility; their source mesh
+data remain in the archived geometry. The exact omissions are stored in each
+figure scene. Grayscale display colours are cosmetic, not modified RF
+materials. Grid guides in the 3D inset are sparsified for visibility; full
+receiver sample coordinates are plotted in the top views. The TX phase centre
+and target are small numerical markers, not added antenna hardware. Standalone
+top views should be used with the corresponding complete figure caption.
+
+SUGGESTED CAPTION 1
+External cell-based RIS workflow using Sionna RT 2.1. (a) Equal-scale top
+projection of the saved TX, representative surface cell, design target and
+receiver grid. (b) All 127 cell centres and the PCB outline from the source
+model. (c) Incoming and outgoing channels are traced before selecting the
+constrained cell responses at the target. The responses remain fixed during
+the scan. Cell ports are driven by the incident channel; they are not
+independent transmitters. The optional background and controlled RIS channels
+are combined coherently. Physical source power enters once through
+P_RX = P_TX |h_eff|^2; h_eff is a channel coefficient, not an electric field.
+
+SUGGESTED CAPTION 2
+Single-RIS benchmark geometry at 23.8 GHz. (a) Equal-scale model plan showing
+the TX, direct-link blocker, scanner, exact receiver grid and alternative P1
+and P2 target configurations. All displayed propagation legs are straight
+projections of the saved 3D endpoints. The annotated 1.86 m incident and 1.40 m
+target distances are three-dimensional lengths. (b) Orthographic cutaway of
+the source mesh geometry. (c) Exact 127-cell layout. The scan uses the adopted
+30 by 46 reference-grid convention at 2 cm spacing. The principal benchmark
+tests the LoS RIS branch; surrounding geometry explains laboratory context
+and visibility, without asserting calibrated multipath validation. The
+single-RIS display support/aperture is registered to its saved RIS anchor in
+the figure copy only, as disclosed above.
+
+SUGGESTED CAPTION 3
+Current four-RIS, no-plant Case 3 baseline. (a) Equal-scale plan of the saved
+model with all 2,300 receivers. Solid paths show a selected TX-cell-target
+route; the gray dashed route is the cached TX-metal-support-RX reflection
+associated with the false simulated peak. The reflection point is an actual
+path vertex, not a freely placed graphical control point. The direct-link
+segment ends at its first blocker intersection. (b) Orthographic model
+cutaway. (c) All 508 cells in the supplied four-tile arrangement. The adopted
+receiver height is 0.96 m and the RIS centre height is 1.44 m. Actual scanner
+phase-centre registration, experimental RIS states and power calibration
+remain unconfirmed. These illustrations preserve the adopted geometry and
+do not establish successful measurement validation.
+
+REPRODUCTION
+prepare_geometry.py reads original archived configurations and PLY exports.
+inspect_blend.py reads prepared source .blend files and extracts aperture
+display meshes; it records the single-RIS transform discrepancy.
+render_model.py creates figure-only Blender scenes and orthographic renders.
+draw_schematics.py creates the coordinate plans, cell views, PNG/SVG and PDF.
+verify_and_package.py checks geometry, grayscale output, source preservation
+and archive integrity. NumPy/Matplotlib and the existing addon-vendored Shapely
+are used; Blender 5.2 renders the cutaways. No new RF simulations are performed.

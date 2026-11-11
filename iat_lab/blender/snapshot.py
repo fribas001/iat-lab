@@ -43,7 +43,7 @@ def dependencies():
 def capture():
     path = Path(bpy.data.filepath) if bpy.data.filepath else None
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "blender_version": bpy.app.version_string,
         "saved_file_sha256": sha256(path) if path and path.is_file() else None,
         "unsaved_changes": bpy.data.is_dirty,
@@ -70,6 +70,17 @@ def capture():
                     for o in sorted(bpy.data.objects, key=lambda x: x.name)],
         "node_groups": [snapshot_group(g) for g in sorted(bpy.data.node_groups, key=lambda x: x.name)],
         "dependencies": dependencies(),
+        "modifier_inputs": [{"object": o.name, "modifier": m.name,
+            "inputs": {s.name: {
+                "mode": getattr(getattr(m.properties.inputs, s.identifier, None), "type", None),
+                "value": value(getattr(getattr(m.properties.inputs, s.identifier, None), "value", None))}
+                for s in m.node_group.interface.items_tree
+                if s.item_type == "SOCKET" and s.in_out == "INPUT"}}
+            for o in sorted(bpy.data.objects, key=lambda x: x.name) for m in o.modifiers
+            if m.type == "NODES" and m.node_group and hasattr(m, "properties")],
+        "view_layers": [{"scene": s.name, "view_layer": layer.name,
+            "hidden_by_eye": sorted(o.name for o in layer.objects if o.hide_get(view_layer=layer))}
+            for s in sorted(bpy.data.scenes, key=lambda x: x.name) for layer in s.view_layers],
         "embedded_texts": [{"name": t.name, "use_module": t.use_module,
                             "sha256": hashlib.sha256(t.as_string().encode("utf-8")).hexdigest()}
                            for t in sorted(bpy.data.texts, key=lambda x: x.name)],

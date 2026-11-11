@@ -4,8 +4,22 @@ Editable Blender model of the IAT laboratory setup, organized as a reusable
 Python project following the architectural ideas of MolecularNodes.
 
 Open **[`scenes/IAT_Lab.blend`](scenes/IAT_Lab.blend)** in **Blender 5.2.3 LTS**.
-It is an exact copy of the supplied full-background, close-pair model. All four
-scene variants, cameras, path controls, materials and embedded results are retained.
+It now has **19 Geometry Nodes assembly controllers**, wall-mounted absorber
+controls, a radio-material catalog with sources and qualification status, and an
+exporter for **Sionna RT 2.2**. The default layout preserves the supplied model.
+All four scene variants, cameras and archived results are retained; the original
+file is protected under `assets/baseline/`.
+
+![Cycles preview of the IAT laboratory apparatus](docs/images/cycles/overview.png)
+
+Native Cycles render from inside the room, with all walls visible. Paths and heatmap are archived
+results. [All three previews, render settings and reference-image status](docs/PREVIEWS.md).
+
+To edit the environment, expand **`00 IAT Controls`**, select a **`CTRL | …`**
+object and adjust its **`IAT - component controls`** modifier. Position and size
+are in metres. Each wall has its own absorber toggle and dimensions.
+Each scene's results collection contains separate **Paths** and **Heatmap**
+subcollections for independent visibility.
 
 | Scene | Setup |
 | --- | --- |
@@ -16,11 +30,21 @@ scene variants, cameras, path controls, materials and embedded results are retai
 
 ## Understand the model
 
-- [Scene organization and visibility](docs/SCENE_GUIDE.md): all 12 collections,
+- [Original lab references](assets/references/README.md): two photographs,
+  dimensioned room plan and model-derived schematic, with source notes and hashes.
+- [Lab reference audit](docs/LAB_REFERENCES.md): what the supplied archive supports
+  and which dimensions/material assumptions remain unresolved.
+- [Parametric environment](docs/PARAMETRIC_ENVIRONMENT.md): all 19 controllers,
+  position/size/rotation, attached absorbers, member controls and reset/rebuild steps.
+- [Radio-material supplement](docs/RADIO_MATERIALS.md): dielectric properties,
+  assignments, sources, frequency models and qualification status.
+- [Sionna RT export](docs/SIONNA_EXPORT.md): deterministic evaluated meshes,
+  explicit radio materials and a pinned runtime checker.
+- [Baseline scene organization and visibility](docs/SCENE_GUIDE.md): the 12 original collections,
   scene membership, shared objects, cameras and the exact cutaway visibility rules.
-- [Geometry Nodes and controls](docs/GEOMETRY_NODES.md): both groups, flow diagrams,
+- [Archived path Geometry Nodes](docs/GEOMETRY_NODES.md): the two inherited path groups, flow diagrams,
   every exposed control, saved scene settings and practical filtering recipes.
-- [Inspection record](docs/scene_reference.json): machine-readable collection
+- [Baseline inspection record](docs/scene_reference.json): machine-readable collection
   contents, visibility flags, socket interfaces and saved modifier values.
 
 ## Repository layout
@@ -28,9 +52,12 @@ scene variants, cameras, path controls, materials and embedded results are retai
 ```text
 iat_lab/                       reusable Python API and command-line interface
   project.py                   manifest, paths and baseline verification
-  blender/                     Blender scene inventory and text export
-  nodes/                       Geometry Nodes inspection and asset extraction
+  blender/                     scene inventory, text export and Sionna RF export
+  nodes/                       environment graph builders and node asset extraction
+  materials.py                 material models and catalog validation
+config/                        editable RF catalog and recorded assembly defaults
 assets/baseline/               original .blend, protected by SHA-256
+assets/references/             selected lab photos, room plan and model schematic
 scenes/IAT_Lab.blend            editable working model
 data/baseline_inventory.json   reviewable scene and node metadata
 data/embedded/                 text and numerical records extracted from the model
@@ -82,8 +109,10 @@ The [MolecularNodes contribution guide](https://github.com/BradyAJohnston/Molecu
 informs the separation of reusable functions, Blender integration, node assets,
 tests and documentation. MolecularNodes is an architecture reference, not a dependency.
 
-This first version structures the existing lab model. It does not yet provide
-an installable Blender extension, regenerate the lab from Python, or rerun the
-embedded propagation results. The existing two node graphs visualize paths;
-they are not a procedural plant generator. See [architecture](docs/ARCHITECTURE.md),
+The environment graphs are built from versioned Python definitions over the
+protected detailed meshes. No add-on or auto-run Python is needed to use the
+saved controls. Geometry edits do not recompute the archived paths or heatmaps.
+The exporter writes RIS cell geometry/state metadata but does not implement
+active RIS scattering. RF-absorber properties remain an explicitly labeled
+proxy until the product is characterized. See [architecture](docs/ARCHITECTURE.md),
 [provenance](docs/PROVENANCE.md) and [rights](docs/RIGHTS.md).

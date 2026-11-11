@@ -22,6 +22,13 @@ later final-paper study inputs. This repository provides the model and tooling
 for subsequent lab-design improvements, not a fresh validation of those results.
 
 The source archive's rights note described collaborative research data and
-separate third-party components. Only the selected `.blend` and its own embedded
-records are included here; the surrounding solver, studies and measurements
-have not been imported into this repository.
+separate third-party components. The initial import included the selected
+`.blend` and its own embedded records; the surrounding solver, studies and
+measurement datasets have not been imported into this repository.
+
+On 10 November 2026 the owner also supplied the `01_RIS` folder and explicitly
+selected four images for public inclusion: two laboratory photographs, the
+U.046 room plan and an older model-derived four-RIS schematic. They are copied
+unchanged under [assets/references](../assets/references/README.md), with source
+paths, hashes and the original schematic provenance/captions. Their inclusion
+does not validate experimental registration or change RF material qualification.

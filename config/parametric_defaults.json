@@ -1,0 +1,662 @@
+{
+  "schema_version": 1,
+  "controls_collection": "00 IAT Controls",
+  "assemblies": [
+    {
+      "name": "Wall X min",
+      "controller": "CTRL | Wall X min",
+      "members": [
+        "Wall_X_Min | RF 03"
+      ],
+      "absorber": "Absorber_Wall_X_Min | RF 08",
+      "defaults": {
+        "Position": [
+          -0.10000000149011612,
+          2.5925002098083496,
+          1.7999999523162842
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.20000000298023224,
+          5.585000038146973,
+          3.5999999046325684
+        ],
+        "Enabled": true,
+        "Absorber enabled": true,
+        "Absorber depth": 0.0949999988079071,
+        "Absorber gap": 0.00299999862909317,
+        "Absorber scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Absorber offset": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "surface_axis": 0,
+      "surface_sign": 1
+    },
+    {
+      "name": "Wall X max",
+      "controller": "CTRL | Wall X max",
+      "members": [
+        "Wall_X_Max | RF 04"
+      ],
+      "absorber": "Absorber_Wall_X_Max | RF 09",
+      "defaults": {
+        "Position": [
+          3.509999990463257,
+          2.5925002098083496,
+          1.7999999523162842
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.19999980926513672,
+          5.585000038146973,
+          3.5999999046325684
+        ],
+        "Enabled": true,
+        "Absorber enabled": true,
+        "Absorber depth": 0.09500002861022949,
+        "Absorber gap": 0.0030001401901245117,
+        "Absorber scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Absorber offset": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "surface_axis": 0,
+      "surface_sign": -1
+    },
+    {
+      "name": "Wall Y min",
+      "controller": "CTRL | Wall Y min",
+      "members": [
+        "Wall_Y_Min | RF 05"
+      ],
+      "absorber": "Absorber_Wall_Y_Min | RF 07",
+      "defaults": {
+        "Position": [
+          1.7050000429153442,
+          -0.10000000149011612,
+          1.7999999523162842
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          3.4100000858306885,
+          0.20000000298023224,
+          3.5999999046325684
+        ],
+        "Enabled": true,
+        "Absorber enabled": true,
+        "Absorber depth": 0.0949999988079071,
+        "Absorber gap": 0.00299999862909317,
+        "Absorber scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Absorber offset": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "surface_axis": 1,
+      "surface_sign": 1
+    },
+    {
+      "name": "Wall Y max",
+      "controller": "CTRL | Wall Y max",
+      "members": [
+        "Wall_Y_Max | RF 06"
+      ],
+      "absorber": "Absorber_Wall_Y_Max | optional",
+      "defaults": {
+        "Position": [
+          1.7050000429153442,
+          5.284999847412109,
+          1.7999999523162842
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          3.4100000858306885,
+          0.20000028610229492,
+          3.5999999046325684
+        ],
+        "Enabled": true,
+        "Absorber enabled": false,
+        "Absorber depth": 0.0950002670288086,
+        "Absorber gap": 0.002999544143676758,
+        "Absorber scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "Absorber offset": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "surface_axis": 1,
+      "surface_sign": -1
+    },
+    {
+      "name": "Floor",
+      "controller": "CTRL | Floor",
+      "members": [
+        "Lab_Floor | RF 01"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.7050000429153442,
+          2.5924999713897705,
+          -0.07500000298023224
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          3.4100000858306885,
+          5.184999942779541,
+          0.15000000596046448
+        ],
+        "Enabled": true
+      },
+      "surface_axis": 2,
+      "surface_sign": 1
+    },
+    {
+      "name": "Ceiling",
+      "controller": "CTRL | Ceiling",
+      "members": [
+        "Lab_Ceiling | RF 02"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.7050000429153442,
+          2.5924999713897705,
+          3.674999952316284
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          3.4100000858306885,
+          5.184999942779541,
+          0.15000009536743164
+        ],
+        "Enabled": true
+      },
+      "surface_axis": 2,
+      "surface_sign": -1
+    },
+    {
+      "name": "RIS aperture",
+      "controller": "CTRL | RIS aperture",
+      "members": [
+        "RIS_508_Mount_and_Stand | RF 21",
+        "RIS | exact 508 cell centres and profiles",
+        "RIS cell glyphs | active ON blue, OFF dark",
+        "RIS glyphs | reflective phase states",
+        "RIS physical frame | W01133"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.6490956544876099,
+          0.13203512132167816,
+          1.4406673908233643
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.49042463302612305,
+          0.05908387154340744,
+          0.4912983179092407
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "RIS stand",
+      "controller": "CTRL | RIS stand",
+      "members": [
+        "RIS_508_Mount_and_Stand | RF 22"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.649999976158142,
+          0.23999999463558197,
+          0.6599999666213989
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.2999999523162842,
+          0.29999998211860657,
+          1.3199999332427979
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Scanner table",
+      "controller": "CTRL | Scanner table",
+      "members": [
+        "Scanner_Static | RF 18",
+        "Scanner_Static | RF 19",
+        "Scanner_Static | RF 20",
+        "Assumed plant support plane | display only",
+        "Assumed plant support plane | display only.001"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.1799999475479126,
+          1.7799999713897705,
+          0.2930000126361847
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          1.059999942779541,
+          2.450000286102295,
+          0.5860000252723694
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Scanner mechanics",
+      "controller": "CTRL | Scanner mechanics",
+      "members": [
+        "Scanner_X_Bridge",
+        "Scanner_Y_Carriage",
+        "Scanner_RX_Assembly"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.156475305557251,
+          1.6455328464508057,
+          1.062544822692871
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          1.1608967781066895,
+          0.21062242984771729,
+          0.5598357319831848
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Scanner sampling plane",
+      "controller": "CTRL | Scanner sampling plane",
+      "members": [
+        "RX grid | 2300 phase-centre samples",
+        "Scanner AOI boundary",
+        "Scanner AOI boundary.001",
+        "Scanner AOI boundary.002",
+        "Scanner AOI boundary.003"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.1794166564941406,
+          1.639923334121704,
+          0.9563835859298706
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.9047673940658569,
+          0.9843912124633789,
+          0.02223867177963257
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "TX assembly",
+      "controller": "CTRL | TX assembly",
+      "members": [
+        "TX_Tripod | RF 23",
+        "TX_Tripod | RF 24",
+        "TX_Head | RF 25",
+        "TX_Horn_Display",
+        "TX | 10 dBm horn phase centre"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          3.032512664794922,
+          1.4598699808120728,
+          0.7350000143051147
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.49688243865966797,
+          0.5412535667419434,
+          1.4700000286102295
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Blocker",
+      "controller": "CTRL | Blocker",
+      "members": [
+        "Blocker_Wood | RF 11",
+        "Blocker_Supports | RF 12",
+        "Absorber_Blocker_Face | RF 10"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.9255123138427734,
+          1.6533176898956299,
+          0.8349999785423279
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.7529774904251099,
+          1.5999999046325684,
+          1.6699999570846558
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Door",
+      "controller": "CTRL | Door",
+      "members": [
+        "Door_Assembly | RF 13",
+        "Door_Assembly | RF 14"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          2.009999990463257,
+          5.234999656677246,
+          1.149999976158142
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.9800000190734863,
+          0.09999990463256836,
+          2.299999952316284
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Pipes",
+      "controller": "CTRL | Pipes",
+      "members": [
+        "Pipes_All | RF 15"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.7012500762939453,
+          2.817499876022339,
+          2.2125000953674316
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          3.002500057220459,
+          4.735000133514404,
+          2.7249999046325684
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Light fixtures",
+      "controller": "CTRL | Light fixtures",
+      "members": [
+        "Light_Fixtures | RF 16",
+        "Light_Fixtures | RF 17"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.7049999237060547,
+          2.625,
+          3.4105000495910645
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          1.3000000715255737,
+          3.5200002193450928,
+          0.3789999485015869
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Plant 1",
+      "controller": "CTRL | Plant 1",
+      "members": [
+        "Plant1_Branches",
+        "Plant1_Leaves",
+        "Plant1_Petioles",
+        "Plant1_Pot",
+        "Plant1_Root",
+        "Plant1_Saucer",
+        "Plant1_Soil",
+        "Plant1_Stake",
+        "Plant1_Ties",
+        "Plant1_Trunk",
+        "Plant1_Veins"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.4880521297454834,
+          1.087754726409912,
+          0.9059457182884216
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.3681004047393799,
+          0.45106053352355957,
+          0.8088914155960083
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Plant 2",
+      "controller": "CTRL | Plant 2",
+      "members": [
+        "Plant2_Branches",
+        "Plant2_Leaves",
+        "Plant2_Petioles",
+        "Plant2_Pot",
+        "Plant2_Root",
+        "Plant2_Saucer",
+        "Plant2_Soil",
+        "Plant2_Stake",
+        "Plant2_Ties",
+        "Plant2_Trunk",
+        "Plant2_Veins"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.1582521200180054,
+          0.9671561121940613,
+          0.9263758063316345
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.380939245223999,
+          0.45827019214630127,
+          0.8497515916824341
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    },
+    {
+      "name": "Target marker",
+      "controller": "CTRL | Target marker",
+      "members": [
+        "Confirmed target cross",
+        "Confirmed target cross.001",
+        "Confirmed target cross.002",
+        "RX TARGET | report 1.2785, 0.4653, 0.96 m",
+        "RIS_Custom_Target"
+      ],
+      "absorber": null,
+      "defaults": {
+        "Position": [
+          1.1847000122070312,
+          1.4284999370574951,
+          0.9600000381469727
+        ],
+        "Rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "Size": [
+          0.04999995231628418,
+          0.05000007152557373,
+          0.050000011920928955
+        ],
+        "Enabled": true
+      },
+      "surface_axis": null,
+      "surface_sign": null
+    }
+  ],
+  "results_layout": [
+    {
+      "scene": "01 Plants - active RIS",
+      "parent": "05 Embedded simulation results",
+      "paths": "Paths | 01 Plants - active RIS",
+      "heatmap": "Heatmap | 01 Plants - active RIS"
+    },
+    {
+      "scene": "02 Plants - reflective RIS",
+      "parent": "02 Plants - reflective RIS | results",
+      "paths": "Paths | 02 Plants - reflective RIS",
+      "heatmap": "Heatmap | 02 Plants - reflective RIS"
+    },
+    {
+      "scene": "03 No plants - active RIS",
+      "parent": "03 No plants - active RIS | results",
+      "paths": "Paths | 03 No plants - active RIS",
+      "heatmap": "Heatmap | 03 No plants - active RIS"
+    },
+    {
+      "scene": "04 No plants - reflective RIS",
+      "parent": "04 No plants - reflective RIS | results",
+      "paths": "Paths | 04 No plants - reflective RIS",
+      "heatmap": "Heatmap | 04 No plants - reflective RIS"
+    }
+  ]
+}

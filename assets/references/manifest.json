@@ -1,0 +1,42 @@
+{
+  "copied_on": "2026-11-10",
+  "selection": "Four source images explicitly selected by the repository owner for public inclusion",
+  "images": [
+    {
+      "file": "lab-overview.jpg",
+      "source": "RIS_Journal_Revised_2026-10-07/deferred/original_figures/Lab_space.jpg",
+      "sha256": "8153086da297e2eb0d02351a3be8eb96b79251c223117e6743fcb7047695329d",
+      "title": "Laboratory overview photo",
+      "note": "Useful for visible finishes, absorber coverage, blocker, transmitter and scanning table. This photo is not a dimension survey.",
+      "source_archive": "01_RIS",
+      "copied_without_image_modification": true
+    },
+    {
+      "file": "plant-layout.jpg",
+      "source": "RIS_Case3_Photo_Shield_Tilt_2026-10-14/inputs/photo_high_resolution_plant_layout.jpg",
+      "sha256": "b830f814704e58025ec47bb4eba132bd898658f8d0a7dd4eb85724045454f02f",
+      "title": "Plant-layout photo",
+      "note": "Shows wood, dark RIS backing, blue absorbers, pots and scanner hardware. Geometry registration remains uncertain.",
+      "source_archive": "01_RIS",
+      "copied_without_image_modification": true
+    },
+    {
+      "file": "room-u046-plan.jpg",
+      "source": "RIS_Journal_Revised_2026-10-07/deferred/original_figures/FB UG Raum U.046_page-0001l.jpg",
+      "sha256": "9fca49a4aa714994d9991200638518233b3052eed44464a2a810ed13ec273818",
+      "title": "Dimensioned room U.046 plan",
+      "note": "Annotated width 341.0 cm, left length 518.5 cm, right length 502.5 cm and height 3.60 m. The model uses a simplified rectangular envelope; the door/recess details merit a later geometry pass.",
+      "source_archive": "01_RIS",
+      "copied_without_image_modification": true
+    },
+    {
+      "file": "four-ris-model-schematic.png",
+      "source": "RIS_Model_Based_Schematics_2026-10-14/figures/03_Four_RIS_Case3.png",
+      "sha256": "f57c992d6aa17dd0d0782ae3b238da961a753ff5c55311fcf06b1e118cbb8a74",
+      "title": "Model-derived four-RIS schematic",
+      "note": "Derived from saved triangle meshes and coordinates, not generated perspective artwork. Shows an older no-plant Case 3 baseline, not a new simulation or a surveyed lab model.",
+      "source_archive": "01_RIS",
+      "copied_without_image_modification": true
+    }
+  ]
+}

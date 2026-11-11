@@ -4,16 +4,22 @@ Open `scenes/IAT_Lab.blend` with Blender 5.2.3 LTS. Use the scene selector for
 the four plant/RIS variants. The embedded `START HERE.txt` contains the original
 viewing and filtering guide; an exact text export is in `data/embedded/`.
 
+For current environment edits, start with [Parametric environment](PARAMETRIC_ENVIRONMENT.md).
+Select a `CTRL | …` object in `00 IAT Controls` and change its Geometry Nodes
+modifier. The saved model has 19 assembly controllers. See
+[radio materials](RADIO_MATERIALS.md) and [Sionna export](SIONNA_EXPORT.md) for
+simulation preparation.
+
 Read [Scene organization and visibility](SCENE_GUIDE.md) for the full collection
 reference, hidden-object list, shared-data behavior and full-room viewing steps.
 [Geometry Nodes and controls](GEOMETRY_NODES.md) explains both groups with flow
 diagrams, control tables, saved values and filtering recipes.
 
-The collection hierarchy is preserved from the source: laboratory RF geometry,
+The original collection hierarchy is retained, with `00 IAT Controls` added: laboratory RF geometry,
 cutaway walls, close-pair Ficus, devices and guides, simulation results, cameras
 and lighting. Unit settings are metric with a scale length of 1.0.
 
-The two node groups are:
+The two inherited path-display node groups are:
 
 - `RIS path controls | existing Sionna filters + receiver and cell`
 - `Sionna_Paths | embedded straight paths`
@@ -38,9 +44,10 @@ Blender command in the README after editing. Its output does not capture all
 possible Blender properties, evaluated mesh data, animation or external cache
 contents. Preserve the `.blend` as well as the metadata.
 
-In particular, the initial inventory omits per-view-layer eye states and Blender
-5.2's RNA-based modifier input values. The detailed guides use a separate
-[inspection record](scene_reference.json) for those saved values. See the
+The immutable initial inventory omits per-view-layer eye states and Blender
+5.2's RNA-based modifier input values. The current snapshot API (schema 2) captures
+them in `view_layers` and `modifier_inputs`. The detailed baseline guides use a
+separate [inspection record](scene_reference.json) for the original values. See the
 [read-only inspection snippet](GEOMETRY_NODES.md#8-inspecting-the-saved-controls)
 before comparing modifier settings after an edit.
 

@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "frequency_hz": 23800000000.0,
+  "materials": {
+    "itu_concrete": {
+      "model": "itu",
+      "itu_type": "concrete",
+      "relative_permittivity": 5.24,
+      "conductivity_s_m": 0.5513158411152602,
+      "coefficients_abcd": [
+        5.24,
+        0,
+        0.0462,
+        0.7822
+      ],
+      "valid_frequency_ghz": [
+        1,
+        100
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.07946275700682263
+    },
+    "itu_metal": {
+      "model": "itu",
+      "itu_type": "metal",
+      "relative_permittivity": 1.0,
+      "conductivity_s_m": 10000000.0,
+      "coefficients_abcd": [
+        1,
+        0,
+        10000000.0,
+        0
+      ],
+      "valid_frequency_ghz": [
+        1,
+        100
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 7552564.53131191
+    },
+    "itu_wood": {
+      "model": "itu",
+      "itu_type": "wood",
+      "relative_permittivity": 1.99,
+      "conductivity_s_m": 0.14044718548545795,
+      "coefficients_abcd": [
+        1.99,
+        0,
+        0.0047,
+        1.0718
+      ],
+      "valid_frequency_ghz": [
+        0.001,
+        100
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.053303338272364546
+    },
+    "itu_plywood": {
+      "model": "itu",
+      "itu_type": "plywood",
+      "relative_permittivity": 2.71,
+      "conductivity_s_m": 0.33,
+      "coefficients_abcd": [
+        2.71,
+        0,
+        0.33,
+        0
+      ],
+      "valid_frequency_ghz": [
+        1,
+        40
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.09196849798276495
+    },
+    "itu_chipboard": {
+      "model": "itu",
+      "itu_type": "chipboard",
+      "relative_permittivity": 2.58,
+      "conductivity_s_m": 0.2571519135255556,
+      "coefficients_abcd": [
+        2.58,
+        0,
+        0.0217,
+        0.78
+      ],
+      "valid_frequency_ghz": [
+        1,
+        100
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.07527738066868599
+    },
+    "itu_glass": {
+      "model": "itu",
+      "itu_type": "glass",
+      "relative_permittivity": 6.31,
+      "conductivity_s_m": 0.25124051620708615,
+      "coefficients_abcd": [
+        6.31,
+        0,
+        0.0036,
+        1.3394
+      ],
+      "valid_frequency_ghz": [
+        0.1,
+        100
+      ],
+      "thickness_m": 0.1,
+      "status": "ITU_generic_class_not_a_lab_measurement",
+      "source": "https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.2040-4-202509-I!!PDF-E.pdf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.03007147720339356
+    },
+    "iat_absorber_proxy": {
+      "model": "custom",
+      "relative_permittivity": 1.4800000190734863,
+      "conductivity_s_m": 0.03320573270320892,
+      "thickness_m": 0.10000000149011612,
+      "status": "uncharacterized_RF_absorber_archived_proxy",
+      "note": "Archived ceiling-board-like proxy, NOT measured RF absorber properties. Manufacturer and product are unknown.",
+      "source": "assets/baseline/RIS_Full_Background_Close_Pair.blend: RF 4 absorber proxy",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.01694516458232743
+    },
+    "iat_leaf": {
+      "model": "custom",
+      "relative_permittivity": 13.698127404866636,
+      "conductivity_s_m": 18.465524003889673,
+      "thickness_m": 0.0003000000142492354,
+      "status": "archived_prior_not_measured",
+      "note": "Fixed leaf prior from the archived protocol, valid here only at 23.8 GHz; no species/moisture fit is claimed.",
+      "source": "data/embedded/PROTOCOL.json: materials.leaf",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 1.018110414087097
+    },
+    "iat_polypropylene": {
+      "model": "custom",
+      "relative_permittivity": 2.200000047683716,
+      "conductivity_s_m": 0.00582583574578166,
+      "thickness_m": 0.003000000026077032,
+      "status": "archived_polypropylene_assumption",
+      "note": "Pot/saucer polypropylene assumption, not an identification or measurement of the real pot.",
+      "source": "data/embedded/PROTOCOL.json: materials.pot",
+      "frequency_hz": 23800000000.0,
+      "relative_permeability": 1.0,
+      "scattering_coefficient": 0.0,
+      "xpd_coefficient": 0.0,
+      "loss_tangent": 0.0019999999756893333
+    },
+    "iat_ideal_absorber": {
+      "model": "ideal_absorber",
+      "status": "ideal_limiting_case_not_dielectric_measurement",
+      "relative_permittivity": null,
+      "conductivity_s_m": null,
+      "loss_tangent": null,
+      "frequency_hz": 23800000000.0,
+      "source": "https://nvlabs.github.io/sionna/rt/api/radio_materials.html",
+      "note": "Absorbs all incident energy. No transmission or reflected/scattered path; casts a radio shadow."
+    }
+  },
+  "excluded_uncharacterized": [
+    "soil",
+    "ties",
+    "veins",
+    "visual guides"
+  ],
+  "absorber_product": "RF absorber; manufacturer/model not supplied"
+}

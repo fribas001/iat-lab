@@ -1,0 +1,2 @@
+# Optional simulation/validation environment; Blender has no pip dependency on this.
+sionna-rt==2.2.0
