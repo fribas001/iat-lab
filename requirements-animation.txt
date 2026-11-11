@@ -1,0 +1,2 @@
+# Used only to package rendered PNG frames into the repository GIF.
+Pillow==12.3.0

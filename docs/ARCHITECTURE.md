@@ -1,9 +1,8 @@
 # Architecture
 
-The project borrows the separation of Python API, Blender integration, node
-assets, tests and documentation from
-[MolecularNodes](https://github.com/BradyAJohnston/MolecularNodes/blob/main/CONTRIBUTING.md),
-inspected on 10 November 2026. No MolecularNodes code is copied.
+The project separates the Python API, Blender integration, node assets, tests
+and documentation. The editable laboratory model and reproducible simulation
+exports are the core of this structure.
 
 | Layer | Responsibility | Dependency |
 | --- | --- | --- |

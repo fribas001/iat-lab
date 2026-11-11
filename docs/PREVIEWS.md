@@ -1,5 +1,7 @@
 # Cycles previews and reference images
 
+For the compact looping GIF shown in the README, see the [setup animation](ANIMATION.md).
+
 These images are native Blender **Cycles** renders of `scenes/IAT_Lab.blend`,
 using the saved default layout with **all four walls, the floor and the ceiling
 visible**. Dedicated perspective cameras and softbox lights are placed inside

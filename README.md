@@ -1,7 +1,13 @@
 # IAT Lab
 
-Editable Blender model of the IAT laboratory setup, organized as a reusable
-Python project following the architectural ideas of MolecularNodes.
+Editable Blender model of the IAT laboratory, with parametric scene controls
+and Sionna RT export tools.
+
+The lab layouts draw on supplied photographs, the room plan and
+[Radpour et al.'s RIS experiment](https://arxiv.org/abs/2402.04844v2), including
+its transmitter, RIS, blocker and receiver-scanner arrangement. See the
+[layout references](docs/LAB_REFERENCES.md#published-experimental-layout-reference)
+for the relationship to this project's four-RIS and plant configurations.
 
 Open **[`scenes/IAT_Lab.blend`](scenes/IAT_Lab.blend)** in **Blender 5.2.3 LTS**.
 It now has **19 Geometry Nodes assembly controllers**, wall-mounted absorber
@@ -10,10 +16,11 @@ exporter for **Sionna RT 2.2**. The default layout preserves the supplied model.
 All four scene variants, cameras and archived results are retained; the original
 file is protected under `assets/baseline/`.
 
-![Cycles preview of the IAT laboratory apparatus](docs/images/cycles/overview.png)
+![Animated interior tour of the IAT laboratory setup](docs/images/setup-tour.gif)
 
-Native Cycles render from inside the room, with all walls visible. Paths and heatmap are archived
-results. [All three previews, render settings and reference-image status](docs/PREVIEWS.md).
+Six-second interior tour with all walls visible, followed by archived paths and
+heatmap overlays. [Animation and reproduction steps](docs/ANIMATION.md) ·
+[High-resolution Cycles previews](docs/PREVIEWS.md).
 
 To edit the environment, expand **`00 IAT Controls`**, select a **`CTRL | …`**
 object and adjust its **`IAT - component controls`** modifier. Position and size
@@ -103,11 +110,10 @@ For the first modelling change, edit `scenes/IAT_Lab.blend`, save it, capture a
 new inventory under `runs/`, and commit the model with a description of the change.
 See [Blender workflow](docs/BLENDER.md) and [contributing](CONTRIBUTING.md).
 
-## Architecture reference and scope
+## Architecture and scope
 
-The [MolecularNodes contribution guide](https://github.com/BradyAJohnston/MolecularNodes/blob/main/CONTRIBUTING.md)
-informs the separation of reusable functions, Blender integration, node assets,
-tests and documentation. MolecularNodes is an architecture reference, not a dependency.
+The project separates the Python API, Blender integration, node assets,
+tests and documentation so scene editing and simulation exports remain reproducible.
 
 The environment graphs are built from versioned Python definitions over the
 protected detailed meshes. No add-on or auto-run Python is needed to use the

@@ -53,5 +53,5 @@
       "sha256": "ff35104d867aef45d7a334847e1d59429c2f0ad8e014732afcd660bf6bfce0d6"
     }
   ],
-  "architecture_reference": "https://github.com/BradyAJohnston/MolecularNodes/blob/main/CONTRIBUTING.md"
+  "experimental_layout_reference": "https://arxiv.org/abs/2402.04844v2"
 }

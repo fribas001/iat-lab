@@ -1,5 +1,10 @@
 # Model provenance
 
+The laboratory layout references include the supplied photographs and room
+drawing, together with Radpour et al.'s published RIS experiment. The
+[reference guide](LAB_REFERENCES.md#published-experimental-layout-reference)
+identifies the paper and distinguishes its setup from this project's extensions.
+
 The repository starts from the user-selected file:
 
 ```text

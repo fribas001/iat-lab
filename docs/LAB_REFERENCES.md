@@ -5,6 +5,25 @@ It contains useful photographs, a room plan, model-derived schematics and older
 geometry/material studies. This index records what was found; it does not
 reclassify historical simulations or photo-based estimates as lab measurements.
 
+## Published experimental layout reference
+
+Hamed Radpour et al., *Reconfigurable Intelligent Surface for Industrial
+Automation: mmWave Propagation Measurement, Simulation, and Control Algorithm
+Requirements*, [arXiv:2402.04844v2](https://arxiv.org/abs/2402.04844v2), 2024.
+
+The experiment provides a basis for some layouts used in this project:
+**Figure 3** gives the testbed plan, **Figure 4** shows the apparatus with and
+without direct-path blockage, and **Table I** specifies the single 127-element
+RIS operating at 23.8 GHz. The arrangement combines a tripod-mounted horn,
+RIS, absorber blocker and receiver on an XY positioning table.
+[Read the experimental setup in the paper](https://arxiv.org/html/2402.04844v2#S4).
+
+The repository combines that experimental reference with the supplied lab
+photographs, room drawing and archived geometry. Its four-tile, 508-cell model
+and plant configurations are project-specific extensions, not configurations
+established by this single-RIS paper. The paper's layouts are a modeling
+reference; measurement agreement is not implied by using them.
+
 ## Useful sources
 
 Paths below are relative to the supplied archive. Four selected images are
